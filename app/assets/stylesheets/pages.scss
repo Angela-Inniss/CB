@@ -196,9 +196,16 @@ background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v155804
 height:300px;
 background-size:cover;
 }
-.label{
-  background-color:black;
 
-  position:relative;
+.label {
+  position: relative;
+  top: 80%;
+  text-align: center;
 }
 
+.label-box {
+  position:relative;
+  background-color:black;
+  top: 82%;
+  height: 55px;
+}

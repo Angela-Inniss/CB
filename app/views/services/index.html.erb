@@ -1,1 +1,7 @@
+<h1>Completed Jobs.</h1>
 
+<ul>
+  <% @services.each do |service| %>
+    <li><%= link_to service.name, service_path(service) %></li>
+  <% end %>
+</ul>

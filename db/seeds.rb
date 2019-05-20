@@ -16,4 +16,29 @@ Service.create!({
   name: "Wood",
   description: "shiney clean "
 })
+Service.create!({
+  name: "Carpet Cleaned",
+  description: "shiney clean "
+})
+Service.create!({
+  name: "Blinds",
+  description: "shiney clean "
+})
+Service.create!({
+  name: "Karndean",
+  description: "shiney clean "
+})
+Service.create!({
+  name: "Rug Cleaning",
+  description: "shiney clean "
+})
+
+Service.create!({
+  name: "Hard Floor",
+  description: "shiney clean "
+})
+Service.create!({
+  name: "Amtico",
+  description: "shiney clean "
+})
 puts 'Finished!'
