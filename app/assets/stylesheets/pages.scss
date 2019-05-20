@@ -1,0 +1,204 @@
+
+@media screen and (min-width: 600px){
+  .flex-box1 {
+    display:flex;
+    justify-content:space-between;
+    background-color:black;
+  }
+
+  .flex-box2 {
+  display:flex;
+  justify-content:space-between;
+  background-color:black;
+  }
+  .mobile-nav{
+    display:none;
+  }
+
+}
+
+ @media only screen and (max-width: 600px) {
+.mobile-nav {
+  display:flex;
+  justify-content:space-between;
+  background-color:black;
+  flex-direction:column;
+  text-align: center;
+}
+ .flex-box1 {
+    display:none;
+  }
+
+.flex-box2 {
+  display:none;
+  }
+}
+
+
+.padding-nav {
+    padding-left:5px;
+    padding-right:5px;
+  }
+
+  .nav-item {
+    list-style: none;
+  }
+
+.nav-link {
+  color: white !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+// nav services
+
+
+@media screen and (min-width: 600px){
+
+.nav-services {
+  background-color:grey;
+  display:flex;
+  justify-content:space-between;
+  padding: 5px;
+}
+
+.nav-services a {
+  color: black !important;
+
+}
+.dropdown {
+  display:none;
+}
+
+}
+
+ @media only screen and (max-width: 600px) {
+
+  .nav-services {
+  display:none;
+}
+
+.nav-services a {
+  color: black !important;
+
+}
+.nav-services .nav-link {
+  display:none;
+}
+.btn-secondary {
+  width:100%;
+}
+
+}
+
+// banner
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  text-align:center;
+  color:red;
+  font-size:55px;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+/* .card {
+  height:600px;
+  margin: 20px;
+  background-image:url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558040290/images_4.jpg");
+} */
+
+/* .cards {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: yellow;
+}
+
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+  }
+}
+
+@media(max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-gap:10px;
+  }
+}
+ */
+
+
+
+.row {
+  background-color:red;
+  height:300px;
+}
+
+.test {
+background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558040290/images_4.jpg");
+height:300px;
+background-size:cover;
+}
+
+
+.stain {
+background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558040290/images_4.jpg");
+height:300px;
+background-size:cover;
+}
+
+.rug{
+background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558043148/58625931_1259911844176433_4676539998827184128_n_1.jpg");
+height:300px;
+background-size:cover;
+}
+
+.curtain {
+background-image: url("https://www.worldrugsemporium.com/wp-content/uploads/2013/03/Scorpio-Teal1.jpg");
+height:300px;
+background-size:cover;
+}
+
+
+.karndean {
+background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558040294/14636776b5ad0016775cfd32cacd61a8.jpg");
+height:300px;
+background-size:cover;
+}
+
+.test {
+background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558040297/ca-pietra-cement-encaustic-salisbury-pattern-tile-p3427-62969_image.jpg");
+height:300px;
+background-size:cover;
+}
+
+
+.wood {
+background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558043283/10082296-oolong-brown-comp_250.jpg");
+height:300px;
+background-size:cover;
+}
+.label{
+  background-color:black;
+
+  position:relative;
+}
+
