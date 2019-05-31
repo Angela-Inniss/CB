@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'carrierwave', '~> 1.2'
 gem 'popper_js', '~> 1.14.5'
 gem 'bootstrap'
 gem 'jquery-rails'

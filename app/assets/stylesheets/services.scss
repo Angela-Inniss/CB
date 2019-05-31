@@ -1,3 +1,76 @@
 // Place all the styles related to the services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558771814/reform-foss-ecotrust-076265048-vn-sq.jpg")!important;
+
+}
+
+a {
+  color: black !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 13, /home/angela_ubuntu/code/Angela-Inniss/CB/node_modules/bootstrap/scss/mixins/_hover.scss */
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.completed h1 {
+  z-index: 1;
+  position: absolute;
+  top: -1px;
+  font-size: 3.5rem;
+}
+.card-main {
+  width:300px;
+  height:300px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+  margin:20px;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.text-right {
+  text-align:right;
+}
+
+.see-more {
+  height: 15%;
+  background-color:gray;
+  position: relative;
+  top: 72%
+}
+
+.card {
+  border: 0.5px solid rgba(0, 0, 0, 0.125);
+}
+
+.row {
+  height:100%;
+}
+
+.background {
+  background-color: white;
+  margin: 30px;
+}
+
+.category {
+  height: 50px;
+  width: 71px;
+  background-color: black;
+  position: absolute;
+  top: -27px;
+  left: -21px;
+}
+
+.category-tag {
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+}

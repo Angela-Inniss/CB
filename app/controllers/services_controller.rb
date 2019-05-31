@@ -2,7 +2,11 @@ class ServicesController < ApplicationController
 before_action :find_service, only: [:show]
 
   def index
-    @services = Service.all
+    if params[:category].present?
+      @services = Service.where(category: params[:category])
+    else
+      @services = Service.all
+    end
   end
 
   def show
@@ -26,7 +30,7 @@ before_action :find_service, only: [:show]
   private
 
   def service_params
-    params.require(service).permit(:name, :description, :category, :picture_url,:video)
+    params.require(:service).permit(:name, :description, :category, :picture_url, :video, :photo)
   end
 
   def find_service

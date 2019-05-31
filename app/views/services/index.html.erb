@@ -1,7 +1,39 @@
-<h1>Completed Jobs.</h1>
 
-<ul>
-  <% @services.each do |service| %>
-    <li><%= link_to service.name, service_path(service) %></li>
-  <% end %>
-</ul>
+ <h1 class="completed">Completed Jobs.</h1>
+
+
+<%= link_to services_path(category: 'stain removal') do %>
+  <button type="button" class="btn btn-light" id="filter-btn"> Stain removal </button>
+<% end %>
+<%= link_to services_path(category: 'curtains and blinds') do %>
+  <button type="button" class="btn btn-light" id="filter-btn"> Curtains & Blinds </button>
+<% end %>
+<%= link_to services_path(category: 'rug cleaniing') do %>
+  <button type="button" class="btn btn-light" id="filter-btn"> Rug Cleaning </button>
+<% end %>
+<%= link_to services_path(category: 'amtico and karndean') do %>
+  <button type="button" class="btn btn-light" id="filter-btn"> Amtico & Karndean </button>
+<% end %>
+<%= link_to services_path(category: 'hard floor') do %>
+  <button type="button" class="btn btn-light" id="filter-btn"> Hard Floor</button>
+<% end %>
+
+
+<div class="background">
+  <div class="row justify-content-around p-3">
+    <% @services.each do |service| %>
+      <div class="card card-main">
+        <p class="text-center"><%= link_to service.name, service_path(service) %></p>
+        <!-- <p class="text-center"><%= service.description%></p> -->
+        <div class="see-more">
+          <p class="text-right"><%= link_to "See more detail.", service_path(service)%></p>
+          <div class="category">
+             <p class="category-tag"><%= service.name%></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+

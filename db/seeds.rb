@@ -6,39 +6,120 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+Service.destroy_all
 puts 'Creating services...'
+
+
 Service.create!({
-  name: "Stain",
-  description: "v stubborn"
-})
-Service.create!({
-  name: "Wood",
-  description: "shiney clean "
-})
-Service.create!({
-  name: "Carpet Cleaned",
-  description: "shiney clean "
-})
-Service.create!({
-  name: "Blinds",
-  description: "shiney clean "
-})
-Service.create!({
-  name: "Karndean",
-  description: "shiney clean "
-})
-Service.create!({
-  name: "Rug Cleaning",
-  description: "shiney clean "
+  name: "Carpet Cleaning Stain 1",
+  description: "v stubborn",
+  category: "stain removal",
+  remote_photo_url: "https://res.cloudinary.com/dnsof9xnr/image/upload/v1558043148/58625931_1259911844176433_4676539998827184128_n_1.jpg"
 })
 
 Service.create!({
-  name: "Hard Floor",
-  description: "shiney clean "
+  name: "Carpet clean stain 2",
+  description: "shiney clean",
+  category: "carpet cleaning"
 })
 Service.create!({
-  name: "Amtico",
-  description: "shiney clean "
+  name: "Carpet clean stain 3",
+  description: "shiney clean",
+  category: "carpet cleaning"
+})
+Service.create!({
+  name: "Curtains and Blinds 1",
+  description: "shiney clean",
+  category: "curtains and blinds"
+})
+Service.create!({
+  name: "curtains and Blinds 2",
+  description: "curtain clean",
+  category: "curtains and blinds"
+})
+Service.create!({
+  name: "Curtains and Blinds 3",
+  description: "shiney clean",
+  category: "curtains and blinds"
+})
+
+Service.create!({
+  name: "Curtains and Blinds 4",
+  description: "curtain clean",
+  category: "curtains and blinds"
+})
+Service.create!({
+  name: "rug cleaned 1",
+  description: "rug cleaned to perfection",
+  category: "rug cleaning"
+
+})
+Service.create!({
+  name: "rug cleaned 2",
+  description: "curtains cleaned to perfection",
+  category: "rug cleaning"
+
+})
+
+Service.create!({
+  name: "rug cleaned 3",
+  description: "curtains cleaned to perfection",
+  category: "rug cleaning"
+
+})
+Service.create!({
+  name: "rug cleaned 4",
+  description: "curtains cleaned to perfection",
+  category: "rug cleaning"
+
+})
+
+Service.create!({
+  name: "stain removed great 1",
+  description: "stain cleaned to perfection",
+  category: "stain removal"
+
+})
+Service.create!({
+  name: "stain removed great 2",
+  description: "stain cleaned to perfection",
+  category: "stain removal"
+
+})
+Service.create!({
+  name: "stain removed great 3",
+  description: "stain cleaned to perfection",
+  category: "stain removal"
+
+})
+Service.create!({
+  name: "stain removed great 4",
+  description: "stain cleaned to perfection",
+  category: "stain removal"
+
+})
+Service.create!({
+  name: "amtico cleaning 1",
+  description: "stain cleaned to perfection",
+  category: "amtico and karndean"
+
+})
+Service.create!({
+  name: "amtico cleaning 2",
+  description: "stain cleaned to perfection",
+  category: "amtico and karndean"
+
+})
+Service.create!({
+  name: "amtico cleaning",
+  description: "stain cleaned to perfection",
+  category: "amtico and karndean"
+
+})
+Service.create!({
+  name: "hard floor",
+  description: "stain cleaned to perfection",
+  category: "hard floor"
+
 })
 puts 'Finished!'
