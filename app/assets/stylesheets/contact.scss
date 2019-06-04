@@ -1,0 +1,53 @@
+
+.background-contact {
+  background-color: white;
+  /* height: 100vh; */
+  margin: 60px;
+  box-shadow: 10px 10px 10px 10px;
+}
+
+.contact {
+ z-index: 1;
+ position: absolute;
+ top: 117px;
+ font-size: 4.5rem;
+ font-family: fantasy;
+ left: 22px;
+}
+
+.row {
+  padding: 63px;
+}
+.icon {
+  font-size:40px;
+  padding:20px;
+}
+
+.phone {
+  text-decoration: underline;
+}
+
+#vacum img {
+  height:200px;
+  width:200px;
+  text-align:center !important;
+}
+
+label{
+  font-weight: bold;
+}
+
+form {
+    margin:20px;
+    background: lightgray;
+    border-radius: 4px;
+    box-shadow: 4px 2px 41px -9px rgba(171,168,171,0.86);
+    padding:13px;
+}
+
+.flex-box{
+  display:flex;
+  flex-direction:column;
+  padding-top: 50px;
+
+}

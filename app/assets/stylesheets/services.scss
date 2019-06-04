@@ -2,11 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
+/* body {
   background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558771814/reform-foss-ecotrust-076265048-vn-sq.jpg")!important;
-
 }
-
+ */
 a {
   color: black !important;
   text-decoration: none;
@@ -19,12 +18,14 @@ a:hover {
   text-decoration: underline;
 }
 
-.completed h1 {
+.completed  {
   z-index: 1;
   position: absolute;
-  top: -1px;
+  top: 103px;
   font-size: 3.5rem;
+  font-family: fantasy;
 }
+
 .card-main {
   width:300px;
   height:300px;
@@ -70,7 +71,25 @@ a:hover {
 }
 
 .category-tag {
-    color: white;
-    font-size: 10px;
-    padding: 5px;
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.btn-light {
+  color: #212529;
+  background-color: black !important;
+  border-color: black !important;
+}
+
+#filter-btn {
+  color:white;
+  border-radius: 15px;
 }

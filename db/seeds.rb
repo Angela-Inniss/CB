@@ -13,9 +13,12 @@ puts 'Creating services...'
 Service.create!({
   name: "Carpet Cleaning Stain 1",
   description: "v stubborn",
-  category: "stain removal",
-  remote_photo_url: "https://res.cloudinary.com/dnsof9xnr/image/upload/v1558043148/58625931_1259911844176433_4676539998827184128_n_1.jpg"
+  category: "stain removal"
+
 })
+
+
+
 
 Service.create!({
   name: "Carpet clean stain 2",

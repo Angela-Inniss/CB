@@ -30,7 +30,7 @@ before_action :find_service, only: [:show]
   private
 
   def service_params
-    params.require(:service).permit(:name, :description, :category, :picture_url, :video, :photo)
+    params.require(:service).permit(:name, :description, :category, :picture_url, :video, :photo, :photo_cache)
   end
 
   def find_service
