@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :services
   resources :reviews, only: [:create,:destroy]
   get "/:page" => "static_pages#show"
-end
+ end
+

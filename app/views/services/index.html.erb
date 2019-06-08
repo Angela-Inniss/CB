@@ -1,4 +1,7 @@
 <div class="filters">
+  <%= link_to services_path(category: 'carpet cleaning') do %>
+    <button type="button" class="btn btn-light" id="filter-btn"> Carpet Cleaning</button>
+  <% end %>
   <%= link_to services_path(category: 'stain removal') do %>
     <button type="button" class="btn btn-light" id="filter-btn"> Stain removal </button>
   <% end %>

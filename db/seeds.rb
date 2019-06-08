@@ -17,9 +17,6 @@ Service.create!({
 
 })
 
-
-
-
 Service.create!({
   name: "Carpet clean stain 2",
   description: "shiney clean",

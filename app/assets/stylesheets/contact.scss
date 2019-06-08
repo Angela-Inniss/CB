@@ -43,11 +43,15 @@ form {
     border-radius: 4px;
     box-shadow: 4px 2px 41px -9px rgba(171,168,171,0.86);
     padding:13px;
+    height: 120px;
 }
 
 .flex-box{
   display:flex;
   flex-direction:column;
   padding-top: 50px;
+}
 
+#contact-email {
+  text-align:center;
 }
