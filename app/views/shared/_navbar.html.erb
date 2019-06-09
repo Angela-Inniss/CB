@@ -26,7 +26,7 @@
     </div>
 </div>
 
-<div class="nav-services padding-nav d-flex">
+<div class="nav-services padding-nav flex-box3">
     <div>
       <%= link_to  'Carpet Cleaning', services_path(category: 'carpet cleaning') %>
     </div>
@@ -48,9 +48,11 @@
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Services
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonn">
+      <%= link_to  'Carpet Cleaning', services_path(category: 'carpet cleaning') %>
+      <%= link_to "Rug Cleaning.", services_path(category: 'rug cleaning') %>
+      <%= link_to "Curtain & Blind.", services_path(category: 'curtain and blind') %>
+      <%= link_to 'Stain Removal.', services_path(category: 'stain removal') %>
+      <%= link_to "Karden Maintenance.", services_path(category: 'karndean maintenance') %>
     </div>
 </div>
