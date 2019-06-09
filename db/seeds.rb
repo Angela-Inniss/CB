@@ -122,4 +122,10 @@ Service.create!({
   category: "hard floor"
 
 })
+
+url = "http://static.giantbomb.com/uploads/original/9/99864/2419866-nes_console_set.png"
+service = Service.new(name: 'Rug Clean', description: "this is a test if it works")
+service.remote_picture_url_url = url
+service.save
+
 puts 'Finished!'

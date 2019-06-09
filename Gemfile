@@ -5,6 +5,7 @@ ruby '2.5.3'
 #gem "bootstrap_form", ">= 4.2.0"
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'carrierwave', '~> 1.2'
+gem 'cloudinary', '~> 1.9.1'
 gem 'popper_js', '~> 1.14.5'
 gem 'bootstrap'
 gem 'jquery-rails'
