@@ -122,10 +122,11 @@ Service.create!({
   category: "hard floor"
 
 })
+Service.create!({
+  name: "hard floor",
+  description: "stain cleaned to perfection",
+  category: "hard floor",
+  picture_url: "https://images.unsplash.com/photo-1484328577761-18c07a30344a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 
-url = "http://static.giantbomb.com/uploads/original/9/99864/2419866-nes_console_set.png"
-service = Service.new(name: 'Rug Clean', description: "this is a test if it works")
-service.remote_picture_url_url = url
-service.save
-
+})
 puts 'Finished!'

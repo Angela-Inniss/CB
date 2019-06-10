@@ -13,9 +13,22 @@ before_action :find_service, only: [:show]
   end
 
   def new
+    @service = Service.new
   end
 
   def create
+   # creates service instance
+    @service = Service.create(service_params)
+    # if, when the user clicks submit the service is saved
+    # then go back to the show page of the newly created service
+    # which would be service_path(@service)
+    if @service.save!
+      redirect_to service_path(@service) # passing an instance of cocktail
+    else
+    # if service isnt created (bcz of an error or something)
+    # stay on the page and show errors to user
+      render :new
+    end
   end
 
   def edit

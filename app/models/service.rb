@@ -1,4 +1,3 @@
 class Service < ApplicationRecord
-mount_uploader :picture_url, PhotoUploader
+  mount_uploader :photo, PhotoUploader
 end
-
