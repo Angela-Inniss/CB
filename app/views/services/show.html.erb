@@ -2,4 +2,5 @@ show.html.erb
 <h1><%= @service.name %>
 <small><%= @service.description%></small></h1>
 
+  <div><%= cl_image_tag @service.photo, width: 300, height: 200, crop: :fill, class: 'card-image'%></div>
 <%= link_to 'Back to completed jobs', services_path %>

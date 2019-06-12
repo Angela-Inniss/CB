@@ -26,8 +26,7 @@
       <div class="card card-main">
         <!-- <p class="text-center"><%= link_to service.name, service_path(service) %></p> -->
         <!-- <p class="text-center"><%= service.description%></p> -->
-
-        <img src="https://res.cloudinary.com/dnsof9xnr/image/upload/v1559826672/58769340_2220190394725598_8816088964009033728_n.jpg" alt="">
+       <div><%= cl_image_tag service.photo%></div>
         <div class="see-more">
           <p class="text-right"><%= link_to "See more detail.", service_path(service)%></p>
           <div class="category">
@@ -38,5 +37,3 @@
     <% end %>
   </div>
 </div>
-
-

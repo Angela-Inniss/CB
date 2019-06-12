@@ -144,21 +144,34 @@
    text-align:center;
 }
 
-.btn-medium {
-    color: #999999;
-    border: 1px solid #999999;
-    padding: 15px 25px;
-    border-radius: 50px;
-    font-weight: lighter;
-    opacity: 0.6;
-    text-align:center;
-    position: absolute;
-    bottom: 79px;
-    left: 359px;
+
+/*button*/
+
+.centered1 {
+  position: relative;
+  text-align: center;
 }
 
-.btn-medium:hover{
-background-color:#6AD58B;
+.centered2 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-medium {
+  color: #999999;
+  border: 1px solid #999999;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  text-align:center;
+  background: #6AD58B;
+}
+
+.btn-medium:hover {
+background-color:#56b774;
 text-decoration: none;
 
 }

@@ -126,7 +126,6 @@ Service.create!({
   name: "hard floor",
   description: "stain cleaned to perfection",
   category: "hard floor",
-  picture_url: "https://images.unsplash.com/photo-1484328577761-18c07a30344a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-
+  photo: "https://images.unsplash.com/photo-1484328577761-18c07a30344a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 })
 puts 'Finished!'
