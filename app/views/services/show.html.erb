@@ -1,6 +1,19 @@
-show.html.erb
-<h1><%= @service.name %>
-<small><%= @service.description%></small></h1>
 
-  <div><%= cl_image_tag @service.photo, width: 300, height: 200, crop: :fill, class: 'card-image'%></div>
-<%= link_to 'Back to completed jobs', services_path %>
+<h1 id="show-header"><%= @service.name %></h1>
+
+<div class="container">
+  <div class="background-show">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+        <div><%= cl_image_tag @service.photo, width: 300, height: 200, crop: :fill, class: 'card-image'%></div>
+          <iframe width="300" height="200" src="https://www.youtube.com/embed/MNNYGt_fCdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+         <small><%= @service.description%></small></h1>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+ <%= link_to 'Back to completed jobs', services_path %>
