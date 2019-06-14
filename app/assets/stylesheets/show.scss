@@ -1,7 +1,8 @@
 .background-show {
   background: white;
   box-shadow: 10px 10px 10px 10px;
-  margin:30px;
+  margin-top:60px;
+  margin-bottom:30px;
 }
 
 iframe {
@@ -11,9 +12,25 @@ iframe {
 #show-header {
   z-index: 1;
   position: absolute;
-  top: 84px;
+  top: 78px;
   font-size: 3.5rem;
   font-family: fantasy;
-  left: 116px;
+  left: 31px;
+}
 
+.flex {
+  display:flex;
+}
+
+p {
+  display:flex;
+  align-items:center;
+}
+
+.image {
+  padding:15px;
+}
+
+.paragraph {
+  padding:15px;
 }
