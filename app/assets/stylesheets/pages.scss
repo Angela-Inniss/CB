@@ -144,12 +144,26 @@
    text-align:center;
 }
 
+.tag-line-home {
+  justify-content:center;
+}
+
+/*certified image*/
+
+.certified {
+  height:50px;
+  width:50px;
+  position: absolute;
+  left: 90%;
+  bottom: 80%;
+  border-radius: 25px;
+  box-shadow: 6px 6px 6px 6px;
+}
 
 /*button*/
 
 .centered1 {
   position: relative;
-  text-align: center;
 }
 
 .centered2 {
@@ -175,6 +189,20 @@ background-color:#56b774;
 text-decoration: none;
 
 }
+
+/*emergency banner*/
+ .emergency {
+  height:50px;
+  width:100%;
+  background:black;
+  p {
+    color:white;
+    justify-content:center;
+    font-size: 24px;
+    padding:5px;
+  }
+}
+
 
 /*services we offer*/
 .card-product {
@@ -225,7 +253,7 @@ text-decoration: none;
  h2 {
   color:white;
  }
- h3{
+ h3 {
   color:white;
  }
 }
