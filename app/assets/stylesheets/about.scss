@@ -1,55 +1,69 @@
 
-/* .background-about {
-  background-color: red;
-  height: 100vh;
-  margin: 80px;
-  box-shadow: 10px 10px 10px 10px;
-  margin: 30px;
-} */
-
-.about-box-overlap {
-  background-color: green;
-  height: 50%;
-  width:50%;
-  /* margin: 80px; */
-  box-shadow: 10px 10px 10px 10px;
-  margin: 30px;
-  position:absolute;
-  left: 50%;
-}
-
-
 .about {
   z-index: 1;
   position: absolute;
-  top: 90px;
-  font-size: 3.5rem;
+  top: 94px;
+  font-size: 4.5rem;
   font-family: fantasy;
-  left: 47px;
+  left: 5px;
 }
 
 
 .background-about {
-      background-color: white;
+    background-color: white;
     height: 115vh;
     /* margin: 80px; */
     box-shadow: 10px 10px 10px 10px;
-    margin: 20px 54px;
+    margin: 50px 54px;
    /*  display:flex; */
   }
 
-.test2 {
-      background-color: white;
-    box-shadow: 10px 10px 10px 10px;
-    position: absolute;
-    left: 61%;
-    height: 80%;
-    width: -11%;
-    width: 38%;
-    top: 30%;
+.insidebox1 {
+  box-shadow: 10px 10px 10px 10px;
+  position: absolute;
+  left: 67%;
+  height: 71%;
+  width: 31%;
+  top: 45%;
+  background: white;
 }
 
-.row {
+
+.insidebox1 img {
+    height: 411px;
+    width: 321px;
+    position: absolute;
+    top: 0px;
+    left: -1%;
+}
+
+
+.ceo {
+  z-index: 1;
+  position: absolute;
+  top: 801px;
+  font-size: 5.5rem;
+  font-family: fantasy;
+  left: 47px;
+}
+
+.background-about2 {
+    background-color: white;
+    height: 115vh;
+    /* margin: 80px; */
+    box-shadow: 10px 10px 10px 10px;
+    margin: 50px 54px;
+   /*  display:flex; */
+  }
+
+.insidebox2 {
+    box-shadow: 10px 10px 10px 10px;
+    position: absolute;
+    right: 67%;
+    height: 410px;
+    width: 317px;
+    top: 164%;
+    background-color: white;
 
 }
 

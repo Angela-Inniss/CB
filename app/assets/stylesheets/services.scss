@@ -10,6 +10,7 @@ a {
   color: black !important;
   text-decoration: none;
   background-color: transparent;
+  text-align: right;
 }
 
 /* line 13, /home/angela_ubuntu/code/Angela-Inniss/CB/node_modules/bootstrap/scss/mixins/_hover.scss */
@@ -45,7 +46,7 @@ a:hover {
   height: 15%;
   background-color: gray;
   position: relative;
-  top: -13%;
+ /*  top: -13%; */
 }
 
 
@@ -104,3 +105,21 @@ a:hover {
 #new_service {
   height:100%;
 }
+
+
+
+/* height: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    width: 100px;
+    border-radius: 0;
+    display: block;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    line-height: 26px;
+    text-decoration: none;
+    color: #fff;
+    margin: 9px 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .8s ease; */
