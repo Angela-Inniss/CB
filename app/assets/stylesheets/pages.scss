@@ -12,7 +12,7 @@
   justify-content:space-between;
   background-color:black;
   }
-  .mobile-nav{
+  .mobile-nav {
     display:none;
   }
 
@@ -336,7 +336,6 @@ h2 {
   /* margin:20px; */
   background-color:#fafafa;
   height: 100px;
-
 }
 
 
@@ -344,7 +343,32 @@ h2 {
   height: 243px;
 }
 
+@media only screen and (max-width: 600px) {
+ .testimonials2 {
+
+}
+.testimonials1 {
+  display:none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+ .testimonials1 {
+
+}
+.testimonials2{
+  display:none;
+  }
+}
+
+
+
+
 /*footer */
+
+/*footer responsiveness with media queries */
+
+@media screen and (min-width: 600px){
 
 .footer {
   background: #6AD58B;
@@ -357,6 +381,48 @@ h2 {
   text-align:center;
   color:white;
 }
+
+  .footer1{
+    display:none;
+  }
+  .footer2 {
+    display:none;
+  }
+
+}
+
+
+ @media only screen and (max-width: 600px) {
+
+.footer1 {
+background: #6AD58B;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+height: 175px;
+padding: 0px -15px;
+color: rgba(0, 0, 0, 0.3);
+text-align: center;
+color: white;
+}
+ .footer2 {
+ background: #6AD58B;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ height: 175px;
+ padding: 0px -15px;
+ color: rgba(0, 0, 0, 0.3);
+ text-align: center;
+ color: white;
+}
+
+.footer{
+  display:none;
+  }
+}
+
+
 
 .footer i {
   font-size:30px;
@@ -386,6 +452,7 @@ h2 {
 .cite {
   align-items:bottom;
 }
+
 
 
 
