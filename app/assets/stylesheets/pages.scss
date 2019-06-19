@@ -57,10 +57,10 @@
   background-color: transparent;
 }
 
-.sticky-nav {
+/* .sticky-nav {
   position:sticky;
   top: 0;
-}
+} */
 // nav services
 
 
@@ -99,6 +99,27 @@
 .btn-secondary {
   width:100%;
 }
+
+}
+
+.asos {
+    height: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100px;
+    border-radius: 2;
+    border: 1px solid black;
+    box-sizing: border-box;
+    line-height: 26px;
+    text-decoration: none;
+    color: #fff;
+    padding:5px;
+    background-color:dimgray;
+}
+
+.asos:hover {
+background-color:#56b774;
+text-decoration: none;
 
 }
 /*
@@ -367,65 +388,4 @@ h2 {
 }
 
 
-/* .row {
-  background-color:red;
-  height:300px;
-}
 
-.test {
-background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558040290/images_4.jpg");
-height:300px;
-background-size:cover;
-}
-
-
-.stain {
-background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558040290/images_4.jpg");
-height:300px;
-background-size:cover;
-}
-
-.rug{
-background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558043148/58625931_1259911844176433_4676539998827184128_n_1.jpg");
-height:300px;
-background-size:cover;
-}
-
-.curtain {
-background-image: url("https://www.worldrugsemporium.com/wp-content/uploads/2013/03/Scorpio-Teal1.jpg");
-height:300px;
-background-size:cover;
-}
-
-
-.karndean {
-background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558040294/14636776b5ad0016775cfd32cacd61a8.jpg");
-height:300px;
-background-size:cover;
-}
-
-.test {
-background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558040297/ca-pietra-cement-encaustic-salisbury-pattern-tile-p3427-62969_image.jpg");
-height:300px;
-background-size:cover;
-}
-
-
-.wood {
-background-image: url("https://res.cloudinary.com/dnsof9xnr/image/upload/v1558043283/10082296-oolong-brown-comp_250.jpg");
-height:300px;
-background-size:cover;
-}
-
-.label {
-  position: relative;
-  top: 80%;
-  text-align: center;
-}
-
-.label-box {
-  position:relative;
-  background-color:black;
-  top: 82%;
-  height: 55px;
-} */

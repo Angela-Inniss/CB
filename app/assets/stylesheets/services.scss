@@ -22,9 +22,11 @@ a:hover {
 .completed  {
   z-index: 1;
   position: absolute;
-  top: 198px;
-  font-size: 3.5rem;
   font-family: fantasy;
+  margin:72px;
+  top: 37px;
+  font-size: 4.5rem;
+  left: -55px;
 }
 
 .card-main {
@@ -34,19 +36,24 @@ a:hover {
   margin:20px;
 }
 
-.text-center {
-  text-align:center;
-}
 
-.text-right {
-  text-align:right;
-}
 
 .see-more {
   height: 15%;
   background-color: gray;
   position: relative;
  /*  top: -13%; */
+}
+
+.see-more p  a {
+  margin-left:180px;
+  text-decoration:none;
+}
+
+.see-more:hover p  a {
+  margin-left:180px;
+  text-decoration:none;
+  background-color:#56b774;
 }
 
 
@@ -66,7 +73,7 @@ a:hover {
 
 .background {
   background-color: white;
-  margin: 30px;
+  margin: 72px;
 }
 
 .category {
