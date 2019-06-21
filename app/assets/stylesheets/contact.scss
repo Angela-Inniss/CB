@@ -1,3 +1,5 @@
+@media only screen and (min-width: 600px) {
+
 
 .background-contact {
   background-color: white;
@@ -27,17 +29,12 @@
   text-decoration: underline;
 }
 
-#vacum img {
-  height:200px;
-  width:200px;
-  text-align:center !important;
-}
 
-label{
+label {
   font-weight: bold;
 }
 
-form {
+.form-desktop {
     margin:20px;
     background: lightgray;
     border-radius: 4px;
@@ -56,11 +53,24 @@ form {
   text-align:center;
 }
 
+.contact-mobile-header {
+  display:none;
+}
+.background-contact-mobile-inner {
+  display:none;
+}
+
+}
+
+
+
+
 
 
 
 /* mobile contact*/
 
+@media only screen and (max-width: 600px) {
 
 .contact-mobile-header {
   text-align: center;
@@ -68,6 +78,7 @@ form {
   position: absolute;
   top: 187px;
   left: 30px;
+  font-family: fantasy;
 }
 
 .background-contact-mobile {
@@ -89,10 +100,11 @@ form {
   border-radius: 4px;
   box-shadow: 4px 2px 41px -9px rgba(171, 168, 171, 0.86);
   height: 181px;
+  text-align: center;
 
 }
 
-.email-mobile {
+.email-mobile a {
   margin-top: 68px;
   margin-left: 37px;
 }
@@ -102,6 +114,7 @@ form {
   color: white;
   padding: 15px 25px;
   background-color: #6AD58B;
+  margin-top:40px;
 }
 
 .background-contact-mobile-inner p {
@@ -123,4 +136,5 @@ form {
 .contact-list-mobile {
   margin:20px;
   margin-top:35px;
+}
 }
