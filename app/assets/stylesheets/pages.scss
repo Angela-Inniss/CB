@@ -302,7 +302,30 @@ color: white;
   margin-top:32px;
 }
 
-/*who are we section*/
+/*why choose us secction */
+
+
+/*responsiveness for dt and mobile*/
+@media only screen and (max-width: 600px) {
+ .why-mobile {
+
+}
+.why-desktop {
+  display:none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+ .why-desktop {
+
+}
+.why-mobile{
+  display:none;
+  }
+}
+
+
+
 
 h2 {
   padding:20px;
@@ -328,33 +351,50 @@ h2 {
 }
 
 
+
+
 /*reviews*/
 
-.reviews {
-  display:flex;
-  justify-content: space-around;
-  /* margin:20px; */
-  background-color:#fafafa;
-  height: 100px;
-}
 
 
 .height {
   height: 243px;
 }
 
+/*reviews mobile*/
+
 @media only screen and (max-width: 600px) {
  .testimonials2 {
-
 }
+.reviews {
+  justify-content: space-around;
+  background-color: #fafafa;
+  height: 179px;
+  padding-right: -4px;
+ }
+
 .testimonials1 {
   display:none;
   }
+  blockquote p {
+    margin-right: 21px;
+    margin-left: 21px;
+  }
+  footer {
+     margin-left: 21px;
+  }
 }
 
+/*reviews desktop*/
 @media only screen and (min-width: 600px) {
  .testimonials1 {
-
+}
+.reviews {
+  display:flex;
+  justify-content: space-around;
+  /* margin:20px; */
+  background-color:#fafafa;
+  height: 100px;
 }
 .testimonials2{
   display:none;

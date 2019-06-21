@@ -55,3 +55,72 @@ form {
 #contact-email {
   text-align:center;
 }
+
+
+
+
+/* mobile contact*/
+
+
+.contact-mobile-header {
+  text-align: center;
+  font-size: 60px;
+  position: absolute;
+  top: 187px;
+  left: 30px;
+}
+
+.background-contact-mobile {
+  background-color:white;
+  height: 100%;
+  width: 100vw;
+}
+
+.background-contact-mobile-inner {
+  background-color:white;
+  height: 100vh;
+  margin: 30px;
+  box-shadow: 10px 10px 10px 10px;
+}
+
+.form-mobile {
+  margin: 20px;
+  background: lightgray;
+  border-radius: 4px;
+  box-shadow: 4px 2px 41px -9px rgba(171, 168, 171, 0.86);
+  height: 181px;
+
+}
+
+.email-mobile {
+  margin-top: 68px;
+  margin-left: 37px;
+}
+
+
+.btn-treehouse-mobile {
+  color: white;
+  padding: 15px 25px;
+  background-color: #6AD58B;
+}
+
+.background-contact-mobile-inner p {
+  margin:20px;
+  padding-top:50px;
+}
+.background-contact-mobile-inner ul {
+  padding-left:0px;
+}
+
+.background-contact-mobile-inner ul li i {
+  font-size:20px;
+}
+
+.icon-mobile {
+  font-size: 20px;
+  padding:10px;
+}
+.contact-list-mobile {
+  margin:20px;
+  margin-top:35px;
+}
