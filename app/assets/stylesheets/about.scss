@@ -1,3 +1,9 @@
+/*
+
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+
 
 .about {
   z-index: 1;
@@ -12,10 +18,10 @@
 .background-about {
     background-color: white;
     height: 115vh;
-    /* margin: 80px; */
+    margin: 80px;
     box-shadow: 10px 10px 10px 10px;
     margin: 50px 54px;
-   /*  display:flex; */
+   display:flex;
   }
 
 .insidebox1 {
@@ -50,10 +56,10 @@
 .background-about2 {
     background-color: white;
     height: 115vh;
-    /* margin: 80px; */
+    margin: 80px;
     box-shadow: 10px 10px 10px 10px;
     margin: 50px 54px;
-   /*  display:flex; */
+   display:flex;
   }
 
 .insidebox2 {
@@ -87,9 +93,132 @@ ul {
   margin-top: 100px;
 }
 
+}
+ */
+
+
+
+
+//tablet:
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+.background-about-tablet {
+  /* height: 1500px; */
+  width: 100vw;
+  background-color: lightgray;
+
+}
+
+.white-bg-about-tablet{
+  /* background-color: white;
+  height: 50%;
+  width: 100vw;
+  padding: 20px; */
+  border-top-left-radius: 94px;
+  padding:100px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dash {
+  font-size: -webkit-xxx-large;
+  text-align:center;
+  color:green;
+}
+
+
+.ceo-tablet {
+  margin-top: 6px;
+}
+
+.white-bg-ceo {
+  background-color: white;
+  height: 50%;
+  width: 100vw;
+  padding: 20px;
+  border-top-left-radius: 122px;
+}
+
+.clinton-image-tablet {
+  display: flex;
+  justify-content: center;
+}
+
+.clinton-image-tablet img {
+  height:300px;
+  width:300px;
+}
+
+.completed-jobs-heading-tablet {
+  margin:20px;
+}
+
+.box-holder-tablet {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.test {
+  display:flex;
+  margin-bottom:10px;
+}
+
+.box {
+  height: 70px;
+  width: 70px;
+  border-radius: 4px;
+  background: yellow;
+  background-image: url("https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+  margin: 18px 18px;
+}
+
+.divider {
+  width:100%;
+  height:60px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+
+}
+
+.divider p {
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.card-about-tablet {
+  background: white;
+  padding: 12px;
+  width: 500px;
+  border-radius: 10px;
+  margin:15px;
+}
+
+.background-about-mobile {
+  display:none;
+}
+
+}
+
+
+
+
+
 
 // mobile
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 
 .background-about-mobile {
   /* height: 1500px; */
@@ -194,3 +323,12 @@ margin-top: 6px;
     width: 222px;
     border-radius: 10px;
 }
+
+.background-about-tablet {
+  display:none;
+}
+
+
+}
+
+
