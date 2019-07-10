@@ -1,158 +1,72 @@
-/* @media only screen and (min-width: 600px) {
-
-.background-contact {
-  background-color: white;
-  height: 100vh;
-  margin: 60px;
-  box-shadow: 10px 10px 10px 10px;
-}
-
-.contact {
- z-index: 1;
- position: absolute;
- top: 117px;
- font-size: 4.5rem;
- font-family: fantasy;
- left: 22px;
-}
-
-.row {
-  padding: 63px;
-}
-.icon {
-  font-size:40px;
-  padding:20px;
-}
-
-.phone {
-  text-decoration: underline;
-}
-
-
-label {
-  font-weight: bold;
-}
-
-.form-desktop {
-    margin:20px;
-    background: lightgray;
-    border-radius: 4px;
-    box-shadow: 4px 2px 41px -9px rgba(171,168,171,0.86);
-    padding:13px;
-    height: 120px;
-}
-
-.flex-box{
-  display:flex;
-  flex-direction:column;
-  padding-top: 50px;
-}
-
-#contact-email {
-  text-align:center;
-}
-
-.contact-mobile-header {
-  display:none;
-}
- .background-contact-mobile-inner {
-  display:none;
-}
-
-}
 
 
 
-mobile contact
-
-@media only screen and (max-width: 400px) {
-.mobile-contact-page {
-
-}
-
-.contact-mobile-header {
-  text-align: center;
-  font-size: 60px;
-  position: absolute;
-  top: 187px;
-  left: 30px;
-  font-family: fantasy;
-}
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 .background-contact-mobile {
-  background-color:white;
-  height: 100%;
   width: 100vw;
+ /*  height:100vh; */
+  background-color: lightgray;
+  opacity: 0.8;
+  padding:50px;
+    li {
+      list-style:none;
+  }
 }
 
-.background-contact-mobile-inner {
-  background-color:white;
-  height: 100vh;
-  margin: 30px;
-  box-shadow: 10px 10px 10px 10px;
+#formGroupExampleInput2 {
+  height:100px;
 }
 
-.form-mobile {
-  margin: 20px;
-  background: lightgray;
-  border-radius: 4px;
-  box-shadow: 4px 2px 41px -9px rgba(171, 168, 171, 0.86);
-  height: 181px;
-  text-align: center;
+.desktop-tablet-contact {
+  display:none;
+  }
 
-}
-
-.email-mobile a {
-  margin-top: 68px;
-}
-
-
-.btn-treehouse-mobile {
+.divider-contact-mobile {
+  width: 100%;
+  background-color: rgba(71, 98, 104, 0.8);
+  display: flex;
+  justify-content: center;
   color: white;
-  padding: 15px 25px;
-  background-color: #6AD58B;
-  margin-top:40px;
-}
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+ }
 
-.background-contact-mobile-inner p {
-  margin:20px;
-  padding-top:50px;
-}
-.background-contact-mobile-inner ul {
-  padding-left:0px;
-}
+   #sidebar-mobile{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    background: black;
+    color: white;
+    height: 20%;
+    height: 75px;
+    align-items: center;
+ }
 
-.background-contact-mobile-inner ul li i {
-  font-size:20px;
-}
+ #sidebar-mobile li {
+    display: list-item;
+    list-style:none;
+    font-size: 35px;
+   }
 
-.icon-mobile {
-  font-size: 20px;
-  padding:10px;
-}
-.contact-list-mobile {
-  margin:20px;
-  margin-top:35px;
-}
-.contact {
-  display:none;
-}
-.background-contact {
-  display:none;
+#sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    color:white  !important;
+  }
+  i {
+     color:white !important;
   }
 }
 
 
-.form-desktop {
-    margin: 34px;
-    background: lightgray;
-    border-radius: 4px;
-    box-shadow: 4px 2px 41px -9px rgba(171, 168, 171, 0.86);
-    padding: 40px;
-    height: 430px;
-  } */
 
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+//desktop
 @media only screen and (min-width: 600px) {
 
 .form-desktop {
@@ -213,6 +127,12 @@ mobile contact
     letter-spacing: 1px;
     font-weight: 600;
 }
+
+.mobile-contact-page {
+  display:none;
+  }
 }
+
+
 
 

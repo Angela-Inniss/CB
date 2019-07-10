@@ -1,50 +1,94 @@
 
-<!--//tablet-->
+<!-- mobile -->
+<div class="mobile-contact-page">
+  <div class="background-contact-mobile">
+    <div>
+      <h3>Contact.</h3>
+      <div class="dash"> - </div>
+      <h6>Drop us an email</h6>
+      <p class="contact-text-mobile">If you need urgent help please call us using the number supplied on this page. Otherwise please fill in the form below where a member of the team will respond within 24 hours.</p>
+      <div class="dash"> - </div>
+    </div>
 
-<div class="background-about-tablet">
-<div id="sidebar">
-
-    <ul>
-      <li><a href="www.google.com"><i class="fas fa-at icon"> </i> </a></li>
-      <li><a href="www.google.com"><i class="phone"><i class="fas fa-phone icon"></i></a></li>
-      <li><a href="www.google.com"><i class="fab fa-facebook-f icon"></i></a></li>
-    <ul>
-
-</div>
-  <div>
-    <h3>Contact.</h3>
-    <div class="dash"> - </div>
-    <h6>Drop us an email</h6>
-    <p class="about-text-tablet">If you need urgent help please call us using the number supplied on this page. Otherwise please fill in the form below where a member of the team will respond within 24 hours.</p>
-    <div class="dash"> - </div>
-
+    <!--mobile contact form -->
+   <form id="contact-email" class="form-desktop" data-aos="zoom-in">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Name:</label>
+          <input type="text"  name="name" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John Doe@gmail.com">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Message:</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your message here">
+        </div>
+         <!--  <button type="submit" class="btn btn-primary">Submit</button> -->
+        <div class="email"><a href="mailto:name@email.com" class="btn-treehouse">Get a quote</a></div>
+    </form>
   </div>
-
-  <form id="contact-email" class="form-desktop">
-    <div class="form-group">
-      <label for="formGroupExampleInput">Name:</label>
-      <input type="text"  name="name" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address:</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John Doe@gmail.com">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="formGroupExampleInput2">Message:</label>
-      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your message here">
-    </div>
-     <!--  <button type="submit" class="btn btn-primary">Submit</button> -->
-    <div class="email"><a href="mailto:name@email.com" class="btn-treehouse">Get a quote</a></div>
-  </form>
- <div class="divider-contact">
+  <div class="divider-contact-mobile" data-aos="fade-up">
     <p> Got an emergency? Call 012938293 now.</p>
   </div>
-  <div class="back-link-contact">
-    <%= link_to 'Back to completed jobs', services_path %>
-  <div>
+    <div id="sidebar-mobile" data-aos="fade-up">
+          <li><a href="www.google.com"><i class="fas fa-at icon"> </i> </a></li>
+          <li><a href="www.google.com"><i class="phone"><i class="fas fa-phone icon"></i></a></li>
+          <li><a href="www.google.com"><i class="fab fa-facebook-f icon"></i></a></li>
+    </div>
 </div>
 
-  </div>
 
+
+
+
+
+
+<!--//tablet and desktop code-->
+<div class="desktop-tablet-contact">
+  <div class="background-about-tablet">
+  <div id="sidebar" data-aos="fade-right">
+
+      <ul>
+        <li><a href="www.google.com"><i class="fas fa-at icon"> </i> </a></li>
+        <li><a href="www.google.com"><i class="phone"><i class="fas fa-phone icon"></i></a></li>
+        <li><a href="www.google.com"><i class="fab fa-facebook-f icon"></i></a></li>
+      <ul>
+
+  </div>
+    <div>
+      <h3>Contact.</h3>
+      <div class="dash"> - </div>
+      <h6>Drop us an email</h6>
+      <p class="about-text-tablet">If you need urgent help please call us using the number supplied on this page. Otherwise please fill in the form below where a member of the team will respond within 24 hours.</p>
+      <div class="dash"> - </div>
+    </div>
+
+    <form id="contact-email" class="form-desktop" data-aos="zoom-in">
+      <div class="form-group">
+        <label for="formGroupExampleInput">Name:</label>
+        <input type="text"  name="name" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address:</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John Doe@gmail.com">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Message:</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your message here">
+      </div>
+       <!--  <button type="submit" class="btn btn-primary">Submit</button> -->
+      <div class="email"><a href="mailto:name@email.com" class="btn-treehouse">Get a quote</a></div>
+    </form>
+   <div class="divider-contact">
+      <p> Got an emergency? Call 012938293 now.</p>
+   </div>
+    <div class="back-link-contact">
+      <%= link_to 'Back to completed jobs', services_path %>
+    <div>
+  </div>
+    </div>
+  </div>
 </div>
