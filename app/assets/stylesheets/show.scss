@@ -79,14 +79,7 @@ p {
 }
 
 
-li img  {
-    height:50px;
-    width:50px;
-}
-li {
-    list-style: none;
-    padding:20px;
-}
+
 
 iframe {
     padding:20px;
@@ -94,6 +87,22 @@ iframe {
     width: 100% !important;
 }
 
+.breadcrumb {
+  justify-content:center;
+}
 
 
+.card-image-show {
+  width:100%;
+  height:80%;
+}
 
+.carousel-indicators {
+  position:relative !important;
+  li {
+    width:50px !important;
+    height:40px !important;
+    margin-right: 6px !important;
+    margin-left: 6px !important;
+  }
+}
