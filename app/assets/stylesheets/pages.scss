@@ -15,6 +15,10 @@
   .mobile-nav {
     display:none;
   }
+  #nav-bar-grey{
+    display:none;
+  }
+
 
 }
 
@@ -56,12 +60,6 @@
   text-decoration: none;
   background-color: transparent;
 }
-
-/* .sticky-nav {
-  position:sticky;
-  top: 0;
-} */
-// nav services
 
 
 @media screen and (min-width: 600px){
@@ -496,3 +494,60 @@ color: white;
 
 
 
+/*rnew nav dropdown*/
+
+
+#nav-bar-grey {
+  width:100%;
+  height:30px;
+  background-color: grey;
+}
+
+#nav-bar-grey p {
+  text-align:center;
+
+}
+
+
+
+.drop-down-menu-test {
+  width:100%;
+  height: 0px;
+  background-color: black;
+  transition: 0.5s
+}
+
+
+.drop-down-menu-test a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white !important;
+  display: block;
+  transition: 0.3s;
+  text-align:center;
+  margin-bottom:10px;
+  list-style:none;
+}
+
+.drop-down-menu-test a:hover {
+  color: #f1f1f1;
+}
+
+.drop-down-menu-test .closebtn {
+    position: absolute;
+    top: 111px;
+    right: 4px;
+    font-size: 27px;
+    /* margin-left: 0px; */
+    margin: 8px;
+}
+
+.nav-open {
+  height: 400px;
+}
+
+.nav-close {
+  height:0px;
+  transition: 0.7s;
+}

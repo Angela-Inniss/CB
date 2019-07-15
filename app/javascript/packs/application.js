@@ -38,12 +38,20 @@ AOS.init();
 //event.CurrentTArget attacks that element specificallythe one u are clicking on
 
 
-  const imageChangeFlower = document.getElementById("flower");
+/*  const imageChangeFlower = document.getElementById("flower");
     imageChangeFlower.addEventListener("click", (event) => {
       console.log("youclickedme");
       imageChangeFlower.classList.toggle("padding-js");
       imageChangeFlower.insertAdjacentHTML("beforeend", "<li>Luke</li>");
 });
-
-
+*/
 // get current image on click change for image below
+
+
+
+
+
+
+
+
+
