@@ -1,6 +1,7 @@
 
 const dropDown = document.getElementById("nav-bar-grey"); // find the element on the page you want to click on and create a variable for it
 const navBarOpen = document.getElementById("new-drop-down-js"); //find the element on the page you want to slide in and out and create a variable for it
+
 dropDown.onclick = showNav //calling the method .onclick on the element and setting it to the function so the function runs
 
 
