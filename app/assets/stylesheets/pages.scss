@@ -141,7 +141,7 @@ text-decoration: none;
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 161px 0;
 }
 
 .banner h1 {
@@ -177,10 +177,11 @@ text-decoration: none;
   height:50px;
   width:50px;
   position: absolute;
-  left: 90%;
+  left: 82%;
   bottom: 80%;
   border-radius: 25px;
   box-shadow: 6px 6px 6px 6px;
+  opacity:0.9;
 }
 
 /*button*/
@@ -199,12 +200,13 @@ text-decoration: none;
 .btn-medium {
   color: #999999;
   border: 1px solid #999999;
-  padding: 15px 25px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
+  /* font-weight: lighter; */
+  opacity: 0.8;
   text-align:center;
   background: #6AD58B;
+  padding: 15px 20px;
+  border-radius: 7px;
+  font-weight:500;
 }
 
 .btn-medium:hover {
@@ -223,6 +225,7 @@ text-decoration: none;
     justify-content:center;
     font-size: 24px;
     padding:5px;
+    text-align:center;
   }
 }
 
@@ -245,9 +248,10 @@ text-decoration: none;
 }
 
 .card-product h2 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
+  padding:10px !important;
 }
 
 .card-product p {
@@ -262,6 +266,12 @@ text-decoration: none;
   padding: 16px;
 }
 
+.corner-tag {
+  height:50px;
+  width:50px;
+  position:absolute;
+  background:yellow;
+}
 /*carpet banner block*/
 
 .banner2 {
@@ -278,6 +288,9 @@ text-decoration: none;
  }
  h3 {
   color:white;
+ }
+ .advert {
+  padding-top:54px;
  }
 }
 

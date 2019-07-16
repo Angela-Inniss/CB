@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2019_07_16_125350) do
     t.integer "recipient_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["recipient_id"], name: "index_conversations_on_recipient_id"
+    t.index ["sender_id"], name: "index_conversations_on_sender_id"
   end
 
   create_table "services", force: :cascade do |t|
