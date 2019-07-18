@@ -5,7 +5,5 @@ Rails.application.routes.draw do
   resources :services
   resources :reviews, only: [:create,:destroy,]
   get "/:page" => "static_pages#show"
-  get 'contact-me', to: 'messages#new', as: 'new_message'
-  post 'contact-me', to: 'messages#create', as: 'create_message'
  end
 
