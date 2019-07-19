@@ -176,7 +176,7 @@ h3 {
 }
 
 .white-bg-about{
-  background-color: white;
+  /* background-color: white; */
   height: 50%;
   width: 100vw;
   padding: 20px;
@@ -199,6 +199,11 @@ h3 {
   padding:20px;
 }
 
+
+ul {
+  list-style:none;
+}
+
 .ceo-mobile {
 margin-top: 6px;
 
@@ -209,7 +214,7 @@ margin-top: 6px;
   height: 50%;
   width: 100vw;
   padding: 20px;
-  border-top-left-radius: 367px;
+  border-top-left-radius: 145px;
 
 }
 
@@ -250,10 +255,11 @@ margin-top: 6px;
 
 .divider-mobile {
   width:100%;
-  height:60px;
+  /* height:60px; */
   background-color: black;
   display: flex;
   justify-content: center;
+  padding:5px;
 }
 
 .divider-mobile p {
