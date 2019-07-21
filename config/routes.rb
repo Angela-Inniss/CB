@@ -6,4 +6,3 @@ Rails.application.routes.draw do
   resources :reviews, only: [:create,:destroy,]
   get "/:page" => "static_pages#show"
  end
-
