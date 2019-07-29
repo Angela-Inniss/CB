@@ -32,6 +32,9 @@
   font-weight: 700;
   padding: 10px 30px 10px 30px;
   text-align: center;
+  p {
+    margin:0px !important;
+  }
  }
 
    #sidebar-mobile {
@@ -59,7 +62,7 @@
   i {
      color:white !important;
   }
-}
+ }
 
 
 
@@ -126,6 +129,10 @@
     color: white;
     letter-spacing: 1px;
     font-weight: 600;
+    p {
+      margin:0px !important;
+
+    }
 }
 
 .mobile-contact-page {

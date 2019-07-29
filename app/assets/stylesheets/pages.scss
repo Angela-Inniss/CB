@@ -557,11 +557,20 @@ color: white;
     margin: 8px;
 }
 
-.nav-open {
-  height: 400px;
+
+ #new-drop-down-js{
+  display : none;  // set the default value as none
 }
 
-.nav-close {
-  height:0px;
+.nav-open { //when open let the nav look lik ethis
+  height: 400px;
+  display :block !important;
   transition: 0.7s;
 }
+
+.nav-close { // when nav closes go to 0px and display:none
+  height:0px;
+  transition: 0.10s;
+  display:none;
+ }
+
