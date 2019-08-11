@@ -3,3 +3,8 @@ console.log("This is the create.js.erb file");
 // Render flash message
 $('#contact').html("<%= j render 'contact_form' %>");
 $('#flash-message').html("<%= j render 'flash' %>").delay(3000).fadeOut(4000);
+
+
+  // 3. Empty out the input box
+ var inputBox = document.getElementById('contact-form-text-area');
+  inputBox.value = "";
