@@ -1,0 +1,159 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif
+}
+/* mobile nav section with same classes as dt drop down for ease of use*/
+
+.slider-menu {
+  height:5%;
+  background: slategray;
+  /*position: absolute;*/ 
+}
+
+.slider-menu p {
+   /* position: absolute;*/
+    top: 50%;
+    left: 75%;
+    margin: 0px !important;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: 0 0;
+    color:white;
+    opacity: 0.9;
+}
+
+.slider-menu-open {
+    height: 30%;
+    /* width: 60%; */
+    background: slategray;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* left: 40%; */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    
+}
+
+.width {
+  display:flex;
+}
+
+.width-close {
+  display:none;
+}
+
+
+
+/* homepage section*/
+
+.bg-mobile{
+  /* The image used */
+ padding:20%;
+ background-image: url("https://www.sharpcarpetcleaningomaha.com/wp-content/uploads/2017/02/sharp-carpet-cleaner.jpg");
+  /* Full height */
+ /* height: 100%;*/ 
+ height:auto;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mobile-title {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  padding: 20px;   
+    font-family: sans-serif; 
+    margin:0px !important;   
+}
+
+.button-green { 
+    opacity: 0.8;
+    text-align: center;
+    background: #6AD58B;
+    padding: 10px 14px;
+    border-radius: 2px;
+    font-weight: ;
+    font-size: 10px;
+    text-decoration: none;    
+}
+
+a {
+  color:black !important;
+  text-decoration: none;
+
+}
+/*.nav {
+	display:flex;
+	justify-content: space-around;
+	height:10%;
+	background-color: transparent;
+	align-items: center;
+	position:fixed;
+	width:40%;
+}
+li {
+	list-style: none;
+}*/
+
+
+
+
+
+.services {
+	height:20%;
+	width:40%;
+	background:#feca1d;
+	position:absolute;
+	bottom:0px;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	color:white;
+	border:solid 1px white;
+}
+
+.services p {
+  font-size: 10px;
+}
+
+.center-text {
+  text-align: center;
+}
+.padding {
+  padding:20px;
+}
+
+
+/* */
+.card-mobile{
+ background-size: cover;
+    background-position: center;
+    height: 200px;
+     /* height: 100%; for smaller devices 300 and less */
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 22px;
+}
+
+.cards {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    /* height: 100%; */
+    /* background-color: gray; */
+    padding: 20px 191px;
+}
+
+
+
