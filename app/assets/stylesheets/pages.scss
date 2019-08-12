@@ -1,374 +1,165 @@
-
-
-@media screen and (min-width: 600px){
-  .flex-box1 {
-    display:flex;
-    justify-content:space-between;
-    background-color:black;
- }
-
-  .flex-box2 {
-  display:flex;
-  justify-content:space-between;
-  background-color:black;
-  }
-  .mobile-nav {
-    display:none;
-  }
-  #nav-bar-grey{
-    display:none;
-  }
-
-
-}
-
- @media only screen and (max-width: 600px) {
-.mobile-nav {
-  display:flex;
-  justify-content:space-between;
-  background-color:black;
-  flex-direction:column;
-  text-align: center;
-}
- .flex-box1 {
-    display:none;
-  }
-
-.flex-box2 {
-  display:none;
-  }
-}
-
-
-
-
-@media only screen and (max-width:600px) {
-  .nav-services {
-    display:none;
- }
-}
-
-
-.padding-nav {
-    padding-left:5px;
-    padding-right:5px;
-  }
-
-  .nav-item {
-    list-style: none;
-  }
-
-.nav-link {
-  color: white !important;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-
-@media screen and (min-width: 600px){
-
-.nav-services {
-  background-color:grey;
-  display:flex;
-  justify-content:space-between;
-  padding: 5px;
-}
-
-.nav-services a {
-  color: black !important;
-
-}
-.dropdown {
-  display:none;
-}
-
-}
-
- @media only screen and (max-width: 600px) {
-
-  .nav-services {
-  display:none;
-}
-
-.nav-services a {
-  color: black !important;
-
-}
-.nav-services .nav-link {
-  display:none;
-}
-.btn-secondary {
-  width:100%;
-}
-
-}
-
-.asos {
-    height: 30px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100px;
-   /*  border-radius: 2; */
-   /*  border: 1px solid black; */
-    box-sizing: border-box;
-    line-height: 26px;
-    text-decoration: none;
-    color: #fff;
-    padding:5px;
-    /* background-color:dimgray; */
-}
-
-.asos:hover {
-background-color:#56b774;
-text-decoration: none;
-
-}
-/*
-.dropdown-menu .show {
-  display: flex !important;
-  flex-direction: column;
-  padding:20px;
-  } */
-
-.show {
-  display: flex !important;
-  flex-direction: column;
-}
- .show a {
-  margin:10px;
-  text-align:center;
- }
-
-// banner
-
-.banner {
-  background-size: cover;
-  background-position: center;
-  padding: 161px 0;
-}
-
-.banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
-  text-align:center;
-  color:red;
-  font-size:55px;
-}
-
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  text-align:center;
-}
-
-.banner a {
-   text-align:center;
-}
-
-.tag-line-home {
-  justify-content:center;
-}
-
-/*certified image*/
-
-.certified {
-  height:50px;
-  width:50px;
-  position: absolute;
-  left: 82%;
-  bottom: 80%;
-  border-radius: 25px;
-  box-shadow: 6px 6px 6px 6px;
-  opacity:0.9;
-}
-
-/*button*/
-
-.centered1 {
-  position: relative;
-}
-
-.centered2 {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.btn-medium {
-  color: #999999;
-  border: 1px solid #999999;
-  /* font-weight: lighter; */
-  opacity: 0.8;
-  text-align:center;
-  background: #6AD58B;
-  padding: 15px 20px;
-  border-radius: 7px;
-  font-weight:500;
-}
-
-.btn-medium:hover {
-background-color:#56b774;
-text-decoration: none;
-
-}
-
-/*emergency banner*/
- .emergency {
-  width:100%;
-  background:black;
-  p {
-    color:white;
-    justify-content:center;
-    font-size: 24px;
-    padding:5px;
-    text-align:center;
-  }
-}
-
-
-/*services we offer*/
-.card-product {
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  margin:20px;
-}
-
-.card-product img {
+body, html {
   height: 100%;
-  width: 120px;
-  object-fit: cover;
-}
-
-.card-product h2 {
-  font-size: 20px;
-  font-weight: bold;
   margin: 0;
-  padding:10px !important;
+  font-family: sans-serif
 }
 
-.card-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
+.bg {
+  /* The image used */
+  background-image: url("https://www.sharpcarpetcleaningomaha.com/wp-content/uploads/2017/02/sharp-carpet-cleaner.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.card-product .card-product-infos {
-  padding: 16px;
-}
-
-.corner-tag {
-  height:50px;
-  width:50px;
-  position:absolute;
-  background:yellow;
-}
-/*carpet banner block*/
-
-.banner2 {
-  /* height:275px; */
-  padding: 38px;
-}
-
-.banner2-text {
-    text-align: center;
-    position: relative;
-    top: -29px;
- h2 {
-  color:white;
- }
- h3 {
-  color:white;
- }
- .advert {
-  padding-top:54px;
- }
-}
-
-
-.btn-treehouse {
-color: white;
-padding: 15px 25px;
-border-radius: 4px;
-font-weight: bold;
-background: #6AD58B;
-transition: background 0.3s ease;
-padding: 7px 21px;
-}
-
-.btn-treehouse:hover{
-background-color: #7fb17f;
-color: white;
-}
-.email {
-  margin-top:32px;
-}
-
-/*why choose us secction */
-
-
-/*responsiveness for dt and mobile*/
-@media only screen and (max-width: 600px) {
- .why-mobile {
-
-}
-.why-desktop {
-  display:none;
-  }
-}
-
-@media only screen and (min-width: 600px) {
- .why-desktop {
-
-}
-.why-mobile{
-  display:none;
-  }
-}
-
-
-
-
-h2 {
-  padding:20px;
-  text-align:center;
-  color:gray;
-}
-
-.info-block i {
-  font-size:70px;
-  padding:30px;
-}
-
-.d-flex {
-  justify-content:space-evenly;
-}
-
-.info-block-icon {
+.desktop-nav {
   display:flex;
-  flex-direction:column;
-  margin:20px;
- /*  padding:20px; */
+  justify-content: space-around;
+  height:10%;
+  background-color: transparent;
+  align-items: center;
+  position:fixed;
+  width:40%;
+}
+li {
+  list-style: none;
+}
+
+.white-split {
+  height: 100%;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+  padding: 20px;
+    font-family: sans-serif;
+    margin:0px !important;
+}
+
+.button-green {
+    opacity: 0.8;
+    text-align: center;
+    background: #6AD58B;
+    padding: 10px 14px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+a {
+  color:black !important;
+  text-decoration: none;
+
+}
+
+.white-split p {
+      margin: 0px 10px 30px 10px;
+      font-size:11px;
+}
+
+.services {
+  height:20%;
+  width:40%;
+  background:#feca1d;
+  position:absolute;
+  bottom:0px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  color:white;
+  border:solid 1px white;
+}
+
+.services p {
+  font-size: 10px;
+}
+
+.center-text {
   text-align: center;
 }
+.padding {
+  padding:20px;
+}
 
+.slider-menu {
+  height:20%;
+  width:3%;
+  background: slategray;
+  position: absolute;
+  bottom: 0px;
+  left: 40%;
+}
+
+.slider-menu p {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    margin: 0px !important;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: 0 0;
+    color:white;
+    opacity: 0.9;
+}
+
+.slider-menu-open {
+  height:20%;
+  width:60%;
+  background: slategray;
+  position: absolute;
+  bottom: 0px;
+  left:40%;
+ /* display: flex;
+  justify-content: center;*/
+  justify-content: space-around;
+  align-items: center;
+  display:none;
+}
+
+.width {
+
+  display:flex;
+}
+
+.width-close {
+  display:none;
+}
+/* our services*/
+.card {
+ background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 22px;
+}
+
+.cards {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    /* height: 100%; */
+    /* background-color: gray; */
+    padding: 20px 191px;
+}
+
+
+/* reviews*/
 
 
 
 /*reviews*/
-
-
 
 .height {
   height: 243px;
@@ -381,9 +172,11 @@ h2 {
 }
 .reviews {
   justify-content: space-around;
-  background-color: #fafafa;
+  background-color: #feca1d;
   height: 179px;
   padding-right: -4px;
+  padding-top: 10%;
+  margin: 150px;
  }
 
 .testimonials1 {
@@ -406,16 +199,13 @@ h2 {
   display:flex;
   justify-content: space-around;
   /* margin:20px; */
-  background-color:#fafafa;
-  height: 100px;
+  background-color:#feca1d;
+
 }
 .testimonials2{
   display:none;
   }
 }
-
-
-
 
 /*footer */
 
@@ -508,69 +298,4 @@ color: white;
 
 
 
-
-/*rnew nav dropdown*/
-
-
-#nav-bar-grey {
-  width:100%;
-  height:30px;
-  background-color: grey;
-}
-
-#nav-bar-grey p {
-  text-align:center;
-
-}
-
-
-.drop-down-menu-test {
-  width:100%;
-  height: 0px;
-  background-color: black;
-  transition: 0.5s
-}
-
-
-.drop-down-menu-test a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white !important;
-  display: block;
-  transition: 0.3s;
-  text-align:center;
-  margin-bottom:10px;
-  list-style:none;
-}
-
-.drop-down-menu-test a:hover {
-  color: #f1f1f1;
-}
-
-.drop-down-menu-test .closebtn {
-    position: absolute;
-    top: 111px;
-    right: 4px;
-    font-size: 27px;
-    /* margin-left: 0px; */
-    margin: 8px;
-}
-
-
- #new-drop-down-js{
-  display : none;  // set the default value as none
-}
-
-.nav-open { //when open let the nav look lik ethis
-  height: 400px;
-  display :block !important;
-  transition: 0.7s;
-}
-
-.nav-close { // when nav closes go to 0px and display:none
-  height:0px;
-  transition: 0.10s;
-  display:none;
- }
 

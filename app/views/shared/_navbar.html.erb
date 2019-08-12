@@ -1,82 +1,28 @@
 <!-- Black main navigationon on desktop  -->
-<div class="flex-box1 padding-nav sticky-nav">
-    <div>
-      <%= link_to 'Home', root_path, class: "nav-link" %>
-    </div>
-    <div>
-      <ul class="flex-box2">
-        <li class="nav-item active">
-          <%= link_to "About", "/about", class: "nav-link" %>
-        </li>
 
-        <li class="nav-item">
-          <%= link_to "Contact", "/contact", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "All completed jobs", services_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-         </li>
-         <li class="nav-item">
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link" %>
-         </li>
-      </ul>
-    </div>
-</div>
+<div class="desktop-nav">
+  <div>
+     <li class="nav-item active">
+       <%= link_to 'Home', root_path, class: "nav-link" %>
+    </li>
+  </div>
+     <li class="nav-item active">
+        <%= link_to "About", "/about", class: "nav-link" %>
+     </li>
 
-<!-- Black Main navigation on mobile  -->
-<div class="mobile-nav padding-nav sticky-nav">
-    <div>
-      <%= link_to 'Home', root_path, class: "nav-link" %>
-    </div>
-    <div>
-      <%= link_to "About", "/about", class: "nav-link" %>
-    </div>
-    <div>
-      <%= link_to "Contact", "/contact", class: "nav-link" %>
-    </div>
-    <div>
-      <%= link_to "All completed jobs", services_path, class: "nav-link" %>
-    </div>
-</div>
-
-<!--Grey navigation on desktop  -->
-<div class="nav-services padding-nav flex-box3">
-    <div>
-      <%= link_to  'Carpet Cleaning', services_path(category: 'carpet cleaning'), class:"asos" %>
-    </div>
-    <div>
-      <%= link_to "Rug Cleaning", services_path(category: 'rug cleaning'), class:"asos"  %>
-    </div>
-    <div>
-      <%= link_to "Curtain & Blind", services_path(category: 'curtain and blind'), class:"asos"  %>
-    </div>
-    <div>
-      <%= link_to 'Stain Removal', services_path(category: 'stain removal'), class:"asos"  %>
-    </div>
-    <div>
-      <%= link_to "Karden Maintenance", services_path(category: 'karndean maintenance'), class:"asos"  %>
-    </div>
-</div>
-
-
-<!--Grey navigation on desktop  -->
-<!--new dropdown list -->
-<!--element that will be clicked on -->
-<div id="nav-bar-grey">
-  <p>Click here to see all services</p>
-
-</div>
-
-<!--side navigation that will appear when clicked on  -->
-<div class="drop-down-menu-test" id="new-drop-down-js">
-  <a id="closebtn" href="#">X</a>
-  <%= link_to  'Carpet Cleaning', services_path(category: 'carpet cleaning') %>
-  <%= link_to "Rug Cleaning", services_path(category: 'rug cleaning') %>
-  <%= link_to "Curtain & Blind", services_path(category: 'curtain and blind') %>
-  <%= link_to 'Stain Removal', services_path(category: 'stain removal') %>
-  <%= link_to "Karden Maintenance", services_path(category: 'karndean maintenance') %>
+     <li class="nav-item">
+        <%= link_to "Contact", "/messages", class: "nav-link" %>
+     </li>
+     <li class="nav-item">
+        <%= link_to "All completed jobs", services_path, class: "nav-link" %>
+     </li>
+     <!--   <li class="nav-item">
+       <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+     </li>
+       <li class="nav-item">
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link" %>
+      </li> -->
+   </ul>
 </div>
 
 
