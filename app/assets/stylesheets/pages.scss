@@ -1,41 +1,327 @@
-body, html {
+@media only screen and (min-width: 600px) {
+   body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://www.sharpcarpetcleaningomaha.com/wp-content/uploads/2017/02/sharp-carpet-cleaner.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .desktop-nav {
+    display:flex;
+    justify-content: space-around;
+    height:10%;
+    background-color: transparent;
+    align-items: center;
+    position:fixed;
+    width:40%;
+  }
+  li {
+    list-style: none;
+  }
+
+  .white-split {
+    height: 100%;
+      width: 40%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  h1 {
+    padding: 20px;
+      font-family: sans-serif;
+      margin:0px !important;
+  }
+
+  .button-green {
+      opacity: 0.8;
+      text-align: center;
+      background: #6AD58B;
+      padding: 10px 14px;
+      border-radius: 2px;
+      font-weight: 600;
+      font-size: 10px;
+      text-decoration: none;
+  }
+
+  a {
+    color:black !important;
+    text-decoration: none;
+
+  }
+
+  .white-split p {
+        margin: 0px 10px 30px 10px;
+        font-size:11px;
+  }
+
+  .services {
+    height:20%;
+    width:40%;
+    background:#feca1d;
+    position:absolute;
+    bottom:0px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    border:solid 1px white;
+  }
+
+  .services p {
+    font-size: 10px;
+  }
+
+  .center-text {
+    text-align: center;
+  }
+  .padding {
+    padding:20px;
+  }
+
+  .slider-menu {
+    height:20%;
+    width:3%;
+    background: slategray;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+  }
+
+  .slider-menu p {
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      margin: 0px !important;
+      -webkit-transform: rotate(90deg);
+      -webkit-transform-origin: 0 0;
+      color:white;
+      opacity: 0.9;
+  }
+
+  .slider-menu-open {
+    height:20%;
+    width:60%;
+    background: slategray;
+    position: absolute;
+    bottom: 0px;
+    left:40%;
+   /* display: flex;
+    justify-content: center;*/
+    justify-content: space-around;
+    align-items: center;
+    display:none;
+  }
+
+  .width {
+
+    display:flex;
+  }
+
+  .width-close {
+    display:none;
+  }
+  /* our services*/
+
+  .section2 {
+    margin: 100px 0px;
+  }
+  .card {
+   background-size: cover;
+      background-position: center;
+      height: 300px;
+      border-radius: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: white;
+      font-size: 22px;
+  }
+
+  .cards {
+    display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5px;
+      /* height: 100%; */
+      /* background-color: gray; */
+      padding: 20px 191px;
+  }
+
+
+  @media only screen and (min-width: 600px) {
+   .testimonials1 {
+  }
+  .reviews {
+    display: flex;
+    justify-content: space-around;
+    /* margin: 20px; */
+    background-color: lightgray;
+    height: 170px;
+    align-items: center;
+
+  }
+  .testimonials2{
+    display:none;
+    }
+  }
+
+  /*footer */
+
+    .footer {
+    background: #6AD58B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 175px;
+    padding: 0px 50px;
+    color: rgba(0,0,0,0.3);
+    text-align:center;
+    color:white;
+  }
+
+    .footer1{
+      display:none;
+    }
+    .footer2 {
+      display:none;
+    }
+
+
+  .footer i {
+    font-size:30px;
+  }
+
+   .footer-links {
+    display: flex;
+    align-items: center;
+    background-color: #7fbf7f;
+    height:79px;
+    justify-content: space-between;
+  }
+  .footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0px 10px;
+    text-align:center;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer-links p {
+    font-size:10px;
+  }
+  .cite {
+    align-items:bottom;
+  }
+  .slider-menu-mobile{
+    display:none;
+ }
+ .slider-menu-open-mobile {
+  display:none;
+ }
+.bg-mobile {
+  display:none;
+}
+.card-mobile {
+display:none;
+}
+.reviews-mobile {
+  display:none;
+}
+.services-mobile {
+  display:none;
+}
+.center-text-mobile{
+  display:none;
+}
+}
+
+
+
+
+
+
+
+
+
+    /* MOBILE*/
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body, html {
   height: 100%;
   margin: 0;
   font-family: sans-serif
 }
 
-.bg {
-  /* The image used */
-  background-image: url("https://www.sharpcarpetcleaningomaha.com/wp-content/uploads/2017/02/sharp-carpet-cleaner.jpg");
+.slider-menu-mobile{
+  height:5%;
+  background: slategray;
+}
+
+.slider-menu-mobile p {
+    top: 50%;
+    left: 75%;
+    margin: 0px !important;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: 0 0;
+    color:white;
+    opacity: 0.9;
+}
+
+.slider-menu-open-mobile {
+    height: 30%;
+    background: slategray;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+
+}
+
+.width {
+  display:flex;
+}
+
+.width-close {
+  display:none;
+}
+
+
+
+.bg-mobile{
+ padding:20%;
+ background-image: url("https://www.sharpcarpetcleaningomaha.com/wp-content/uploads/2017/02/sharp-carpet-cleaner.jpg");
   /* Full height */
-  height: 100%;
+ /* height: 100%;*/
+ height:auto;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.desktop-nav {
+.mobile-title {
   display:flex;
-  justify-content: space-around;
-  height:10%;
-  background-color: transparent;
+  justify-content: center;
   align-items: center;
-  position:fixed;
-  width:40%;
-}
-li {
-  list-style: none;
-}
-
-.white-split {
-  height: 100%;
-    width: 40%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -50,7 +336,7 @@ h1 {
     background: #6AD58B;
     padding: 10px 14px;
     border-radius: 2px;
-    font-weight: 600;
+
     font-size: 10px;
     text-decoration: none;
 }
@@ -61,10 +347,6 @@ a {
 
 }
 
-.white-split p {
-      margin: 0px 10px 30px 10px;
-      font-size:11px;
-}
 
 .services {
   height:20%;
@@ -83,220 +365,139 @@ a {
   font-size: 10px;
 }
 
-.center-text {
+.center-text-mobile {
   text-align: center;
 }
 .padding {
   padding:20px;
 }
 
-.slider-menu {
-  height:20%;
-  width:3%;
-  background: slategray;
-  position: absolute;
-  bottom: 0px;
-  left: 40%;
-}
-
-.slider-menu p {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    margin: 0px !important;
-    -webkit-transform: rotate(90deg);
-    -webkit-transform-origin: 0 0;
-    color:white;
-    opacity: 0.9;
-}
-
-.slider-menu-open {
-  height:20%;
-  width:60%;
-  background: slategray;
-  position: absolute;
-  bottom: 0px;
-  left:40%;
- /* display: flex;
-  justify-content: center;*/
-  justify-content: space-around;
-  align-items: center;
-  display:none;
-}
-
-.width {
-
-  display:flex;
-}
-
-.width-close {
-  display:none;
-}
-/* our services*/
-.card {
- background-size: cover;
-    background-position: center;
-    height: 300px;
-    border-radius: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-size: 22px;
-}
-
-.cards {
+.cards-mobile {
   display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
-    /* height: 100%; */
-    /* background-color: gray; */
-    padding: 20px 191px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  /* height: 100%; */
+  /* background-color: gray; */
+  padding: 30px 20px;
 }
 
 
-
-
-
-
-/*reviews mobile*/
-
-@media only screen and (max-width: 600px) {
- .testimonials2 {
-}
-.reviews {
-  justify-content: space-around;
-  align-items:center;
-  background-color: lightgray;
-  height: 179px;
-  padding-right: -4px;
-  padding-top: 10%;
-  margin: 150px;
- }
-
-
-
-
-
-.testimonials1 {
-  display:none;
-  }
-  blockquote p {
-    margin-right: 21px;
-    margin-left: 21px;
-  }
-  footer {
-     margin-left: 21px;
-  }
-}
-
-/*reviews desktop*/
-@media only screen and (min-width: 600px) {
- .testimonials1 {
-}
-.reviews {
+.card-mobile {
+ background-size: cover;
+ background-position: center;
+ height: 150px;
+ /* height: 100%; for smaller devices 300 and less */
+  border-radius: 1px;
   display: flex;
-  justify-content: space-around;
-  /* margin: 20px; */
-  background-color: lightgray;
-  height: 170px;
   align-items: center;
-
+  justify-content: space-around;
+  color: white;
+  font-size: 22px;
 }
-.testimonials2{
-  display:none;
+
+
+  /*reviews mobile*/
+
+   .testimonials2 {
   }
-}
+  .reviews-mobile {
+    justify-content: space-around;
+    align-items:center;
+    background-color: lightgray;
+    padding-right: -4px;
+    padding:50px;
 
-/*footer */
+   }
 
-/*footer responsiveness with media queries */
 
-@media screen and (min-width: 600px){
+  .testimonials1 {
+    display:none;
+    }
+    blockquote p {
+      margin-right: 21px;
+      margin-left: 21px;
+    }
+    footer {
+       margin-left: 21px;
+    }
 
-.footer {
+
+
+
+
+
+  .footer1 {
   background: #6AD58B;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 175px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-  text-align:center;
-  color:white;
-}
+  padding: 0px -15px;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  }
+   .footer2 {
+   background: #6AD58B;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 175px;
+   padding: 0px -15px;
+   color: rgba(0, 0, 0, 0.3);
+   text-align: center;
+   color: white;
+  }
 
-  .footer1{
+  .footer{
+    display:none;
+    }
+
+
+
+  .footer i {
+    font-size:30px;
+  }
+
+   .footer-links {
+    display: flex;
+    align-items: center;
+    background-color: #7fbf7f;
+    height:79px;
+    justify-content: space-between;
+  }
+  .footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0px 10px;
+    text-align:center;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer-links p {
+    font-size:10px;
+  }
+  .cite {
+    align-items:bottom;
+  }
+
+  .desktop-nav {
+    display:none
+  }
+  .bg {
     display:none;
   }
-  .footer2 {
+
+  .section2{
+    display:none;
+  }
+  .reviews {
     display:none;
   }
 
 }
-
-
- @media only screen and (max-width: 600px) {
-
-.footer1 {
-background: #6AD58B;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-height: 175px;
-padding: 0px -15px;
-color: rgba(0, 0, 0, 0.3);
-text-align: center;
-color: white;
-}
- .footer2 {
- background: #6AD58B;
- display: flex;
- align-items: center;
- justify-content: space-evenly;
- height: 175px;
- padding: 0px -15px;
- color: rgba(0, 0, 0, 0.3);
- text-align: center;
- color: white;
-}
-
-.footer{
-  display:none;
-  }
-}
-
-
-
-.footer i {
-  font-size:30px;
-}
-
- .footer-links {
-  display: flex;
-  align-items: center;
-  background-color: #7fbf7f;
-  height:79px;
-  justify-content: space-between;
-}
-.footer-links a {
-  color: black;
-  opacity: 0.15;
-  text-decoration: none;
-  font-size: 25px;
-  padding: 0px 10px;
-  text-align:center;
-}
-.footer-links a:hover {
-  opacity: 1;
-}
-.footer-links p {
-  font-size:10px;
-}
-.cite {
-  align-items:bottom;
-}
-
-
 
 

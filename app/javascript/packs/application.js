@@ -23,30 +23,6 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 
-//could wrap this in a function?
-
-//const imageChange = document.getElementById("test");
- // imageChange.addEventListener("click", (event) => {
-    //do something
-    //console.log(event);
-    //console.log("you clicked yay");
-   // console.log(event.currentTarget);
-  //  imageChange.classList.toggle("padding-js");
- // });
-
-//classList is to add a class
-//event.CurrentTArget attacks that element specificallythe one u are clicking on
-
-
-/*  const imageChangeFlower = document.getElementById("flower");
-    imageChangeFlower.addEventListener("click", (event) => {
-      console.log("youclickedme");
-      imageChangeFlower.classList.toggle("padding-js");
-      imageChangeFlower.insertAdjacentHTML("beforeend", "<li>Luke</li>");
-});
-*/
-// get current image on click change for image below
-
 
 
 
