@@ -21,13 +21,36 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 
 AOS.init();
+//decalre variable user will click on
 
 
+/*//decalre variable user will click on
+
+var sliderMenu = document.getElementById("slider-menu");
+var close = document.getElementById("X");
+
+//addevent lsitener
+sliderMenu.addEventListener("click", (event) => {
+ activateNav();
+ console.log(event)
+ });
+
+close.addEventListener("click", (event) => {
+ closeNav();
+ });
+
+//create function that should be executed on click and make sure it's called above in event listener
 
 
+function activateNav(event) {
+//decalre more variables if needed
+  var sliderMenuOpen = document.getElementById("slider-menu-open");
+      sliderMenuOpen.classList.
+      toggle("width");
+ }
 
 
-
-
-
-
+  function closeNav (event) {
+    var sliderMenuOpen = document.getElementById("slider-menu-open");
+        sliderMenuOpen.classList.toggle("width-close");
+  }*/

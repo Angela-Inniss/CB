@@ -1,11 +1,12 @@
 //decalre variable user will click on
 
-const sliderMenu = document.getElementById("slider-menu");
-const close = document.getElementById("X");
+var sliderMenu = document.getElementById("slider-menu");
+var close = document.getElementById("X");
 
 //addevent lsitener
 sliderMenu.addEventListener("click", (event) => {
- activateNav();
+ activate();
+ console.log(event)
  });
 
 close.addEventListener("click", (event) => {
@@ -15,15 +16,16 @@ close.addEventListener("click", (event) => {
 //create function that should be executed on click and make sure it's called above in event listener
 
 
-function activateNav(event) {
+function activate(event) {
 //decalre more variables if needed
-  const sliderMenuOpen = document.getElementById("slider-menu-open");
+  var sliderMenuOpen = document.getElementById("slider-menu-open");
       sliderMenuOpen.classList.toggle("width");
+
  }
 
 
   function closeNav (event) {
-    const sliderMenuOpen = document.getElementById("slider-menu-open");
+    var sliderMenuOpen = document.getElementById("slider-menu-open");
         sliderMenuOpen.classList.toggle("width-close");
   }
 

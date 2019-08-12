@@ -1,7 +1,6 @@
-
 //decalre variable user will click on
-const sliderMenuMobile= document.getElementById("slider-menu-mobile");
-const closeMobile = document.getElementById("X-mobile");
+var sliderMenuMobile= document.getElementById("slider-menu-mobile");
+var closeMobile = document.getElementById("X-mobile");
 
 //addevent lsitener
 sliderMenuMobile.addEventListener("click", (event) => {
@@ -18,14 +17,17 @@ closeMobile.addEventListener("click", (event) => {
 
 function activateNav(event) {
 //decalre more variables if needed
-  const sliderMenuOpen = document.getElementById("slider-menu-open-mobile");
+  var sliderMenuOpen = document.getElementById("slider-menu-open-mobile");
       sliderMenuOpen.classList.toggle("width");
  }
 
 
   function closeNav (event) {
-    const sliderMenuOpen = document.getElementById("slider-menu-open-mobile");
+    var sliderMenuOpen = document.getElementById("slider-menu-open-mobile");
         sliderMenuOpen.classList.toggle("width-close");
   }
+
+
+
 
 
