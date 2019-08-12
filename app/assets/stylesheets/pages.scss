@@ -155,15 +155,9 @@ a {
 }
 
 
-/* reviews*/
 
 
 
-/*reviews*/
-
-.height {
-  height: 243px;
-}
 
 /*reviews mobile*/
 
@@ -172,12 +166,17 @@ a {
 }
 .reviews {
   justify-content: space-around;
-  background-color: #feca1d;
+  align-items:center;
+  background-color: lightgray;
   height: 179px;
   padding-right: -4px;
   padding-top: 10%;
   margin: 150px;
  }
+
+
+
+
 
 .testimonials1 {
   display:none;
@@ -196,10 +195,12 @@ a {
  .testimonials1 {
 }
 .reviews {
-  display:flex;
+  display: flex;
   justify-content: space-around;
-  /* margin:20px; */
-  background-color:#feca1d;
+  /* margin: 20px; */
+  background-color: lightgray;
+  height: 170px;
+  align-items: center;
 
 }
 .testimonials2{
