@@ -21,41 +21,17 @@
 
 
 
-<!-- desktop-->
-<div class="desktop-jobs">
-  <h1 class="completed-desktop">Completed Jobs.</h1>
+<!-- desktop
+<div class="desktop-jobs"><h1 class="completed-desktop">Completed Jobs.</h1>
   <div class="background">
     <div class="row justify-content-around p-3">
       <% @services.each do |service| %>
         <div class="card card-main" data-aos="fade-up">
-          <!-- <p class="text-center"><%= link_to service.name, service_path(service) %></p> -->
-          <!-- <p class="text-center"><%= service.description%></p> -->
-         <div class="m-2"><%= cl_image_tag service.photo%></div>
-          <div class="see-more">
-            <p><%= link_to "See more detail.", service_path(service)%></p>
-            <div class="category">
-               <p class="category-tag"><%= service.name%></p>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</div>
-
-
-<!-- mobile
-<div class="mobile-jobs">
-  <h1 class="completed-mobile">Completed Jobs.</h1>
-  <div class="background">
-    <div class="row justify-content-around p-3">
-      <% @services.each do |service| %>
-        <div class="card card-main-mobile" data-aos="fade-up">
           <p class="text-center"><%= link_to service.name, service_path(service) %></p>
           <p class="text-center"><%= service.description%></p>
          <div class="m-2"><%= cl_image_tag service.photo%></div>
-          <div class="see-more">
-            <p><%= link_to "See more detail.", service_path(service)%></p>
+         <div class="see-more">
+           <p><%= link_to "See more detail.", service_path(service)%></p>
             <div class="category">
                <p class="category-tag"><%= service.name%></p>
             </div>
@@ -64,5 +40,33 @@
       <% end %>
     </div>
   </div>
+</div> -->
+
+
+<!-- desktop-->
+<div class="desktop-jobs"><h1 class="completed-desktop">Completed Jobs.</h1>
+    <div class="row justify-content-around p-3">
+      <% @services.each do |service| %>
+        <div class="card card-main" data-aos="fade-up">
+          <div class="m-2"><%= cl_image_tag service.photo%></div>
+          <p class="text-position"><%= link_to service.name, service_path(service) %></p>
+        </div>
+      <% end %>
+    </div>
 </div>
- -->
+
+
+
+<!-- mobile-->
+<div class="mobile-jobs"> <h1 class="completed-mobile">Completed Jobs.</h1>
+      <div class="row justify-content-around p-3">
+      <% @services.each do |service| %>
+        <div class="card card-main-mobile" data-aos="fade-up">
+           <div class="m-2"><%= cl_image_tag service.photo%></div>
+           <p class="text-position-mobile"><%= link_to service.name, service_path(service) %></p>
+        </div>
+      <% end %>
+    </div>
+</div>
+
+

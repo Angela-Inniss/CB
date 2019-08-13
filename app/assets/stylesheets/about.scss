@@ -1,26 +1,119 @@
+/* body, html {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif
+
+} */
+
+
+.section1 {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20% 20%;
+  background:#feca1d;
+}
+.section1a {
+  padding:3%;
+}
+
+img {
+  height:200px;
+  width:200px;
+}
+
+.section2 {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20% 20%;
+  background:lightgray;
+}
+
+li {
+  list-style: none;
+}
+
+.green {
+  color:#6AD58B;
+  font-weight: 900;
+
+}
+
+
+
+.section3 {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20% 20%;
+
+}
+
+.arrow
+{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+
+  /**
+   * Dark Arrow Down
+   */
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
+  background-size: contain;
+}
+
+
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.divider{
+
+    background: black;
+    height: 10%;
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 24px;
+
+}
+
+
+
 
 
 //desktop:
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .example {
-    background: pink;
-  }
-   .drop-down-menu-test {
-    display:none;
-  }
+
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .example {
-    background: orange;
-  }
-   .drop-down-menu-test {
-    display:none;
-  }
+
 }
 
 
@@ -29,136 +122,21 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-.background-about-tablet {
-  /* height: 1500px; */
-  width: 100vw;
-  background-color: lightgray;
-  opacity: 0.8px;
-  padding:200px;
-    li {
-      list-style:none;
-  }
-}
-
-.background-about-tablet h3 {
- font-size: 3.75rem !important;
-}
-
-.white-bg-about-tablet{
-  /* background-color: white;
-  height: 50%;
-  width: 100vw;
-  padding: 20px; */
-  border-top-left-radius: 94px;
-  padding:100px;
-}
-
-
-
-h3 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.dash {
-  font-size: -webkit-xxx-large;
-  text-align:center;
-  color:green;
-  padding:30px;
-}
-
-
-.ceo-tablet {
-  margin-top: 6px;
-}
-
-.white-bg-ceo {
-  background-color:darkslategrey;
-  padding: 80px;
-  margin-bottom: 50px;
-}
-
-.clinton-image-tablet {
-  display: flex;
-  justify-content: center;
-}
-
-.clinton-image-tablet img {
-  height:300px;
-  width:300px;
-}
-
-.completed-jobs-heading-tablet {
-  padding:50px;
-}
-
-.box-holder-tablet {
-  display: flex;
-  flex-direction:column;
-  justify-content: space-around;
-  /* flex-wrap: wrap; */
-  align-items: center;
-  padding: 10px 100px 10px 100px;
-}
-
-.test {
-  display:flex;
-  margin-bottom:10px;
-}
-
-.box {
-  height: 70px;
-  width: 70px;
-  border-radius: 4px;
-  background: yellow;
-  background-image: url("https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
-  margin: 18px 18px;
-}
 
 .divider-tablet {
-  width:100%;
-  height:60px;
-  background-color: black;
-  display: flex;
-  justify-content: center;
+   background: black;
+    height: 10%;
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 24px;
 }
 
-
-.divider-tablet p {
-  color:white;
-  text-align:center;
-  font-weight:bold;
-  font-size: 20px;
-  margin-top:15px;
 }
-
-.card-about-tablet {
-  background: white;
-  padding: 12px;
-  width: 500px;
-  border-radius: 10px;
-  margin: 25px 10px 10px 50px;
-}
-
-.card-about-tablet h6 {
-  font-size:20px;
-  letter-spacing:2px;
-}
-
-.card-about-tablet p {
-  color:gray;
-}
-
-.background-about-mobile {
-  display:none;
-}
- .drop-down-menu-test {
-    display:none;
-  }
-
-}
-
-
 
 
 
@@ -168,126 +146,22 @@ h3 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-.background-about-mobile {
-  /* height: 1500px; */
-  width: 100vw;
-  background-color: lightgray;
-
-}
-
-.white-bg-about{
-  /* background-color: white; */
-  height: 50%;
-  width: 100vw;
-  padding: 20px;
-  border-top-left-radius: 367px;
-
-}
-
-h3 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.dash {
-  font-size: -webkit-xxx-large;
-  text-align:center;
-  color:green;
-}
-
-.about-text-mobile {
-  padding:20px;
-}
-
-
-ul {
-  list-style:none;
-}
-
-.ceo-mobile {
-margin-top: 6px;
-
-}
-.white-bg-ceo{
-
-  background-color: white;
-  height: 50%;
-  width: 100vw;
-  padding: 20px;
-  border-top-left-radius: 145px;
-
-}
-
-.clinton-image-mobile {
-  display: flex;
-  justify-content: center;
-}
-.clinton-image-mobile img {
-  height:300px;
-  width:300px;
-}
-
-
-.completed-jobs-heading-mobile {
-    margin:20px;
-}
-
-
-.box-holder {
-    display: flex;
-    margin: 10px;
-    justify-content: space-around;
-    margin-left: 10px;
-    margin-top: 22px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-
-.box {
-    height: 70px;
-    width: 70px;
-    border-radius: 4px;
-    background: yellow;
-    background-image: url("https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
-   margin: 18px 18px;
-}
 
 .divider-mobile {
-  width:100%;
-  /* height:60px; */
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  padding:5px;
-}
 
-.divider-mobile p {
-  color:white;
-  text-align:center;
-  font-weight:bold;
-  font-size: 20px;
-  margin-top:15px;
+    background: black;
+    height: 10%;
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 24px;
 
 }
 
-.card-about-mobile {
-    background: white;
-    padding: 12px;
-    width: 222px;
-    border-radius: 10px;
-}
-
-.background-about-tablet {
-  display:none;
-}
-
-.divider-tablet {
-  display:none;
-}
-/* .drop-down-menu-test {
-    display:none;
-  } */
 }
 
 
