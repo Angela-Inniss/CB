@@ -362,11 +362,10 @@ h1 {
 }
 
 a {
-  color:black !important;
+  color:white !important;
   text-decoration: none;
 
 }
-
 
 .services {
   height:20%;
@@ -394,7 +393,7 @@ a {
 
 .cards-mobile {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 5px;
   /* height: 100%; */
   /* background-color: gray; */
@@ -411,7 +410,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white;
+  color: white !important;
   font-size: 22px;
 }
 
@@ -515,6 +514,10 @@ a {
     display:none;
   }
   .reviews {
+    display:none;
+  }
+
+  .section2-hp {
     display:none;
   }
 
