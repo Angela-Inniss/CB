@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
+gem 'pg_search'
 gem "mail_form", ">= 1.3.0"
 gem 'devise'
 #gem "bootstrap_form", ">= 4.2.0"

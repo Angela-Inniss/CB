@@ -67,7 +67,7 @@
     <div class="carousel-item active">
      <!--  <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(88).jpg"
        alt="First slide"> -->
-      <%= cl_image_tag @service.photo, crop: :fill, class: 'card-image', class: 'card-image-show'%>
+      <%= cl_image_tag @service.images, crop: :fill, class: 'card-image', class: 'card-image-show'%>
 
     </div>
     <div class="carousel-item">
@@ -119,10 +119,10 @@
 <div>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/MNNYGt_fCdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-
-
-
+</div>
 </div>
 
-</div>
+
+  <%=@service.images.each do  |img| %>
+  <%= cl_image_tag @service.images, crop: :fill, class: 'card-image', class: 'card-image-show'%>
+  <%end %>

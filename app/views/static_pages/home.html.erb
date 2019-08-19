@@ -22,10 +22,18 @@
     </div>
     <div class="slider-menu-open" id="slider-menu-open">
       <a id="X" href="">X</a>
-      <a href="">Carpet Cleaning</a>
-      <a href="">Blinds</a>
-      <a href="">Flooring</a>
-      <a href="">Rugs</a>
+        <%= link_to services_path(search: @search, category: 'carpet cleaning') do %>
+          <button type="button" class="btn btn-light" id="filter-btn"> Carpet Cleaning </button>
+        <% end %>
+        <%= link_to services_path(search: @search, category: 'rug cleaning') do %>
+          <button type="button" class="btn btn-light" id="filter-btn"> Rug Cleaning </button>
+        <% end %>
+        <%= link_to services_path(search: @search, category: 'curtains and blinds') do %>
+          <button type="button" class="btn btn-light" id="filter-btn"> Curtains and Blinds </button>
+        <% end %>
+        <%= link_to services_path(search: @search, category: 'karndean') do %>
+          <button type="button" class="btn btn-light" id="filter-btn"> Karndean </button>
+        <% end %>
     </div>
   </div>
 
