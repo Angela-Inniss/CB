@@ -74,7 +74,7 @@
     </div>
    <% end %>
    <%= link_to services_path(search: @search, category: 'rug cleaning') do %>
-    <div class="card" style="background-image:url(https://images.unsplash.com/photo-1444362408440-274ecb6fc730?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2106&q=80)">
+    <div class="card" style="background-image:url(https://images.unsplash.com/photo-1444362408440-274ecb6fc730?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2106&q=80)">s
       <div class="tag">
         <p>Rug Cleaning</p>
       </div>
@@ -130,16 +130,47 @@
   <div class="slider-menu-mobile" id="slider-menu-mobile">
       <p>More</p>
     </div>
-    <div class="slider-menu-open-mobile" id="slider-menu-open-mobile">
+   <!--  <div class="slider-menu-open-mobile" id="slider-menu-open-mobile">
+     <a id="X-mobile" href="">X</a>
+     <a href="">Home</a>
+     <a href="">About</a>
+     <a href="">Contact</a>
+     <a href="">Carpet Cleaning</a>
+     <a href="">Blinds</a>
+     <a href="">Flooring</a>
+     <a href="">Rugs</a>
+     </div> -->
+
+   <div class="slider-menu-open-mobile" id="slider-menu-open-mobile">
       <a id="X-mobile" href="">X</a>
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
-      <a href="">Carpet Cleaning</a>
-      <a href="">Blinds</a>
-      <a href="">Flooring</a>
-      <a href="">Rugs</a>
-  </div>
+      <li class="nav-item active">
+        <%= link_to 'Home', root_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item active">
+        <%= link_to "About", "/about", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", "/messages", class: "nav-link" %>
+      </li>
+      <li class="nav-item" id="completed-job-nav">
+        <%= link_to "All completed jobs", services_path, class: "nav-link" %>
+      </li>
+      <%= link_to services_path(search: @search, category: 'carpet cleaning') do %>
+        <p> Carpet Cleaning</p>
+      <% end %>
+      <%= link_to services_path(search: @search, category: 'rug cleaning') do %>
+        <p> Carpet Cleaning</p>
+      <% end %>
+      <%= link_to services_path(search: @search, category: 'curtains and blinds') do %>
+        <p> Carpet Cleaning</p>
+      <% end %>
+      <%= link_to services_path(search: @search, category: 'karndean') do %>
+        <p> Carpet Cleaning</p>
+      <% end %>
+    </div>
+
+
+
 
   <div class="bg-mobile">
     <div class="mobile-title">
