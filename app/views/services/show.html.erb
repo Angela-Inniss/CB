@@ -1,115 +1,63 @@
-<!--
-<h1 id="show-header"><%= @service.name %></h1>
-
-<div class="container">
-  <div class="background-show">
-
-    <div class="flex">
-     <div class="image">
-        <%= cl_image_tag @service.photo, width: 400, height: 300, crop: :fill, class: 'card-image'%>
-          <iframe width="400" height="300" src="https://www.youtube.com/embed/MNNYGt_fCdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-
-
-      <div class="paragraph">
-         <small><%= @service.description%></small>
-         <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-    </div>
-  </div>
-
-
-</div>
-
- <%= link_to 'Back to completed jobs', services_path %>
- -->
-
-
-<!--
-<div class="background-show-2">
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <img src="https://image.shutterstock.com/image-photo/carpet-260nw-80421658.jpg">
-    </div>
-
-    <div class="col-sm">
-    <h2>Title for service</h2>
-    <p class="breadcrumb"> All jobs | Contact | About </p>
-      One of three columns One of three columnsOne of three columnsOne of three columnsOne of three columnsOne of three columnsOne of three columnsOne of three
-      ne of three columns One of three columnsOne of three columnsOne of three columnsOne of three columnsOne of three columnsOne of three columnsOne of three
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm d-flex">
-      <li><img src="https://image.shutterstock.com/image-photo/carpet-260nw-80421658.jpg" id="flower"></li>
-      <li><img src="https://image.shutterstock.com/image-photo/carpet-260nw-80421658.jpg"></li>
-      <li><img src="https://image.shutterstock.com/image-photo/carpet-260nw-80421658.jpg"></li>
-  </div>
-  <div class="col-sm d-flex">
-
-  </div>
-</div>
-<div>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/M_Bz-e2EjYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> -->
 
 <div class="background-show-2">
 <div class="container">
-  <div class="row">
-<div class="col-sm">
-                            <!--Carousel Wrapper-->
-<div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-     <!--  <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(88).jpg"
-       alt="First slide"> -->
-      <%= cl_image_tag @service.images, crop: :fill, class: 'card-image', class: 'card-image-show'%>
-
-    </div>
-    <div class="carousel-item">
-    <!--   <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(121).jpg"
-      alt="Second slide"> -->
-      <%= cl_image_tag @service.photo, crop: :fill, class: 'card-image', class: 'card-image-show'%>
-
-    </div>
-    <div class="carousel-item">
-   <!--    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg"
-     alt="Third slide"> -->
-      <%= cl_image_tag @service.photo, crop: :fill, class: 'card-image', class: 'card-image-show'%>
-
-    </div>
+<div class="row padding">
+<div class="col-sm col-lg-4">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<% if @service.images.attached? %>
+  <div class="carousel-inner">
+    <% @service.images.each_with_index do |image, index| %>
+      <% if index == 0 %>
+        <div class="carousel-item active d-block w-100">
+          <%= image_tag(image,:size => "400x400")%>
+        </div>
+      <% else %>
+        <div class="carousel-item">
+          <%= image_tag(image, :size => "400x400") %>
+        </div>
+      <% end %>
+    <%end %>
   </div>
-  <!--/.Slides-->
-  <!--Controls-->
-  <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+<%end %>
+
+
+<% if @service.images.attached? %>
+  <ol class="carousel-indicators">
+    <% @service.images.each_with_index do |image, index| %>
+      <% if index == 0 %>
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+          <%= image_tag(image,:size => "50x50")%>
+        </li>
+        <% elsif index == 1  %>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1">
+          <%= image_tag(image,:size => "50x50")%>
+        </li>
+        <% elsif index == 2 %>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2">
+          <%= image_tag(image,:size => "50x50")%>
+        </li>
+        <% else%>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2">
+          <%= image_tag(image,:size => "50x50")%>
+        </li>
+      <%end %>
+    <%end %>
+  </ol>
+<%end %>
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-  <!--/.Controls-->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-thumb" data-slide-to="0" class="active">
-      <img src="https://mdbootstrap.com/img/Photos/Others/Carousel-thumbs/img%20(88).jpg" width="100">
-    </li>
-    <li data-target="#carousel-thumb" data-slide-to="1">
-      <img src="https://mdbootstrap.com/img/Photos/Others/Carousel-thumbs/img%20(121).jpg" width="100">
-    </li>
-    <li data-target="#carousel-thumb" data-slide-to="2">
-      <img src="https://mdbootstrap.com/img/Photos/Others/Carousel-thumbs/img%20(31).jpg" width="100">
-    </li>
-  </ol>
 </div>
-<!--/.Carousel Wrapper-->
 </div>
 
-    <div class="col-sm">
+
+
+    <div class="col-sm col-lg-8">
     <h2><%= @service.name %></h2>
     <p class="breadcrumb"> All jobs | Contact | About </p>
       <p><%=@service.description%></p>
@@ -123,6 +71,3 @@
 </div>
 
 
-  <%=@service.images.each do  |img| %>
-  <%= cl_image_tag @service.images, crop: :fill, class: 'card-image', class: 'card-image-show'%>
-  <%end %>

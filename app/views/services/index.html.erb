@@ -1,72 +1,45 @@
-<!-- <div class="filters">
-  <%= link_to services_path(category: 'carpet cleaning') do %>
-    <button type="button" class="btn btn-light" id="filter-btn"> Carpet Cleaning</button>
-  <% end %>
-  <%= link_to services_path(category: 'stain removal') do %>
-    <button type="button" class="btn btn-light" id="filter-btn"> Stain removal </button>
-  <% end %>
-  <%= link_to services_path(category: 'curtains and blinds') do %>
-    <button type="button" class="btn btn-light" id="filter-btn"> Curtains & Blinds </button>
-  <% end %>
-  <%= link_to services_path(category: 'rug cleaniing') do %>
-    <button type="button" class="btn btn-light" id="filter-btn"> Rug Cleaning </button>
-  <% end %>
-  <%= link_to services_path(category: 'amtico and karndean') do %>
-    <button type="button" class="btn btn-light" id="filter-btn"> Amtico & Karndean </button>
-  <% end %>
-  <%= link_to services_path(category: 'hard floor') do %>
-    <button type="button" class="btn btn-light" id="filter-btn"> Hard Floor</button>
-  <% end %>
-</div> -->
-
-
-
-<!-- desktop
-<div class="desktop-jobs"><h1 class="completed-desktop">Completed Jobs.</h1>
-  <div class="background">
-    <div class="row justify-content-around p-3">
-      <% @services.each do |service| %>
-        <div class="card card-main" data-aos="fade-up">
-          <p class="text-center"><%= link_to service.name, service_path(service) %></p>
-          <p class="text-center"><%= service.description%></p>
-         <div class="m-2"><%= cl_image_tag service.photo%></div>
-         <div class="see-more">
-           <p><%= link_to "See more detail.", service_path(service)%></p>
-            <div class="category">
-               <p class="category-tag"><%= service.name%></p>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</div> -->
 
 
 <!-- desktop-->
-<div class="desktop-jobs"><h1 class="completed-desktop">Completed Jobs.</h1>
-    <div class="row justify-content-around p-3">
-      <% @services.each do |service| %>
-        <div class="card card-main" data-aos="fade-up">
-          <div class="m-2"><%= cl_image_tag service.photo%></div>
-          <p class="text-position"><%= link_to service.name, service_path(service) %></p>
-        </div>
-      <% end %>
-    </div>
+<div class="desktop-jobs">
+  <h1 class="completed-desktop">Completed Jobs.</h1>
+  <div class="row justify-content-around p-3">
+    <% @services.each do |service| %>
+      <div class="card card-main" data-aos="fade-up">
+        <% if service.images.attached? %>
+          <% service.images.each_with_index do |image, index| %>
+            <% if index == 0 %>
+              <% if image.persisted? %>
+                <%= image_tag(image.variant(resize: '300x300')) %>
+                <p class="text-position"><%= link_to service.name, service_path(service) %></p>
+              <% end %>
+            <% end %>
+          <% end %>
+        <% end %>
+       </div>
+    <% end %>
+  </div>
 </div>
-
-
 
 <!-- mobile-->
 <div class="mobile-jobs"> <h1 class="completed-mobile">Completed Jobs.</h1>
-      <div class="row justify-content-around p-3">
-      <% @services.each do |service| %>
-        <div class="card card-main-mobile" data-aos="fade-up">
-           <div class="m-2"><%= cl_image_tag service.photo%></div>
-           <p class="text-position-mobile"><%= link_to service.name, service_path(service) %></p>
-        </div>
-      <% end %>
-    </div>
+  <div class="row justify-content-around p-3">
+    <% @services.each do |service| %>
+      <div class="card card-main-mobile" data-aos="fade-up">
+        <% if service.images.attached? %>
+          <% service.images.each_with_index do |image, index| %>
+            <% if index == 0 %>
+              <% if image.persisted? %>
+                <%= image_tag(image.variant(resize: '300x300')) %>
+                  <p class="text-position-mobile"><%= link_to service.name, service_path(service) %></p>
+              <% end %>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 </div>
+
 
 
