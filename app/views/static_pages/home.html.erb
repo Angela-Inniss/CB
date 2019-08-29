@@ -127,39 +127,39 @@
 <!------ Include the above in your HEAD tag - mobile hp ---------->
 
 
-  <div class="slider-menu-mobile" id="slider-menu-mobile">
-     <i style="margin-left:89%;color:black !important; font-size: 34px;"  class="fas fa-ellipsis-h"></i>
-    </div>
-   <div class="slider-menu-open-mobile" id="slider-menu-open-mobile">
-      <a id="X-mobile" href="">X</a>
-      <li class="nav-item active">
-        <%= link_to 'Home', root_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item active">
-        <%= link_to "About", "/about", class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Contact", "/messages", class: "nav-link" %>
-      </li>
-      <li class="nav-item" id="completed-job-nav">
-        <%= link_to "All completed jobs", services_path, class: "nav-link" %>
-      </li>
-      <%= link_to services_path(search: @search, category: 'carpet cleaning') do %>
-        <p> Carpet Cleaning</p>
-      <% end %>
-      <%= link_to services_path(search: @search, category: 'rug cleaning') do %>
-        <p> Rug Cleaning</p>
-      <% end %>
-      <%= link_to services_path(search: @search, category: 'curtains and blinds') do %>
-        <p> Curtains and Blinds</p>
-      <% end %>
-      <%= link_to services_path(search: @search, category: 'karndean') do %>
-        <p>Karndean</p>
-      <% end %>
-    </div>
+ <!--  <div class="slider-menu-mobile" id="slider-menu-mobile">
+    <i style="margin-left:89%;color:black !important; font-size: 34px;"  class="fas fa-ellipsis-h"></i>
+   </div>
+  <div class="slider-menu-open-mobile" id="slider-menu-open-mobile">
+     <a id="X-mobile" href="">X</a>
+     <li class="nav-item active">
+       <%= link_to 'Home', root_path, class: "nav-link" %>
+     </li>
+     <li class="nav-item active">
+       <%= link_to "About", "/about", class: "nav-link" %>
+     </li>
+     <li class="nav-item">
+       <%= link_to "Contact", "/messages", class: "nav-link" %>
+     </li>
+     <li class="nav-item" id="completed-job-nav">
+       <%= link_to "All completed jobs", services_path, class: "nav-link" %>
+     </li>
+     <%= link_to services_path(search: @search, category: 'carpet cleaning') do %>
+       <p> Carpet Cleaning</p>
+     <% end %>
+     <%= link_to services_path(search: @search, category: 'rug cleaning') do %>
+       <p> Rug Cleaning</p>
+     <% end %>
+     <%= link_to services_path(search: @search, category: 'curtains and blinds') do %>
+       <p> Curtains and Blinds</p>
+     <% end %>
+     <%= link_to services_path(search: @search, category: 'karndean') do %>
+       <p>Karndean</p>
+     <% end %>
+   </div>
 
 
-
+  -->
 
   <div class="bg-mobile">
     <div class="mobile-title">
